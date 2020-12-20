@@ -1,6 +1,6 @@
 ---
 title: Exchange
-description: ""
+description: "Notch Pay usage for Financial services."
 position: 2
 category: Guide
 endpoints:
@@ -36,6 +36,7 @@ curl https://api.notchpay.xyz/v1/exchange/currencies
 ```
 
   </code-block>
+  
 </code-group>
 
 Result format

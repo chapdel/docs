@@ -17,7 +17,7 @@ Notch Pay usage for Financial services.
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Exchange API Key](https://notchpay.xyz/vendors/exchange)
+To get access of those endpoint, you need [Exchange API Key](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
@@ -29,7 +29,7 @@ Get currencies available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.xyz/v1/exchange/currencies
+curl https://api.notchpay.co/exchanges/currencies
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -71,7 +71,7 @@ Get the latest exchange rates available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.xyz/v1/exchange/rates
+curl https://api.notchpay.co/exchanges/rates
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -89,31 +89,25 @@ Result format
     "name": "Afghanistan, Afghani",
     "code": "AFN",
     "symbol": "؋",
-    "format": "؋1,0.000000",
-    "exchange_rate": "0",
-    "active": 0,
-    "created_at": "2020-12-20T00:26:11.000000Z",
-    "updated_at": "2020-12-20T00:26:11.000000Z"
+    "format": "؋1,0.0000",
+    "exchange_rate": "77.243354",
+    "updated_at": "2021-01-10T15:30:24.000000Z"
   },
   {
     "name": "Albania, Lek",
     "code": "ALL",
     "symbol": "Lek",
     "format": "1,0.00Lek",
-    "exchange_rate": "0",
-    "active": 0,
-    "created_at": "2020-12-20T00:26:12.000000Z",
-    "updated_at": "2020-12-20T00:26:12.000000Z"
+    "exchange_rate": "101.235184",
+    "updated_at": "2021-01-10T15:30:24.000000Z"
   },
   {
     "name": "Algerian Dinar",
     "code": "DZD",
     "symbol": "د.ج‏",
-    "format": "د.ج‏ 1,0.000000",
-    "exchange_rate": "0",
-    "active": 0,
-    "created_at": "2020-12-20T00:26:12.000000Z",
-    "updated_at": "2020-12-20T00:26:12.000000Z"
+    "format": "د.ج‏ 1,0.0000",
+    "exchange_rate": "132.206578",
+    "updated_at": "2021-01-10T15:30:27.000000Z"
   },
   ...
 ]
@@ -123,11 +117,13 @@ Result format
 
 Convert any money value from one currency to another at the latest API rates.
 
+### Formatted result
+
 <code-group>
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.xyz/v1/exchange/convert?from=USD&to=XAF&value=500
+curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -139,5 +135,62 @@ curl https://api.notchpay.xyz/v1/exchange/convert?from=USD&to=XAF&value=500
 Result format
 
 ```json
-267,573.7320000 F.CFA
+{
+  "value": "270,648.40 F.CFA",
+  "from": {
+    "name": "US Dollar",
+    "code": "USD",
+    "symbol": "$",
+    "format": "$1,0.0000",
+    "exchange_rate": "1",
+    "updated_at": "2021-02-20T08:46:02.000000Z"
+  },
+  "to": {
+    "name": "Franc CFA (XAF)",
+    "code": "XAF",
+    "symbol": "F.CFA",
+    "format": "1,0.0000 F.CFA",
+    "exchange_rate": "541.296799",
+    "updated_at": "2021-02-20T08:46:03.000000Z"
+  }
+}
+```
+
+### Unformatted result
+
+<code-group>
+  <code-block label="cURL" active>
+
+```cURL
+curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500&format=false
+-H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
+-H "Content-Type: application/json"
+-X GET
+```
+
+  </code-block>
+</code-group>
+
+Result format
+
+```json
+{
+  "value": 270648.3995,
+  "from": {
+    "name": "US Dollar",
+    "code": "USD",
+    "symbol": "$",
+    "format": "$1,0.0000",
+    "exchange_rate": "1",
+    "updated_at": "2021-02-20T08:46:02.000000Z"
+  },
+  "to": {
+    "name": "Franc CFA (XAF)",
+    "code": "XAF",
+    "symbol": "F.CFA",
+    "format": "1,0.0000 F.CFA",
+    "exchange_rate": "541.296799",
+    "updated_at": "2021-02-20T08:46:03.000000Z"
+  }
+}
 ```

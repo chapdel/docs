@@ -4,6 +4,8 @@ description: "Welcome to the Notch Pay Developer Documentation. The guide to bui
 position: 1
 category: ""
 features:
+  - Checkout
+  - Subscription
   - Exchange Rates
 ---
 

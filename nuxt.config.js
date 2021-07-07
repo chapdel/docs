@@ -13,4 +13,8 @@ export default theme({
       },
     ],
   ],
+  server: {
+    port: 30002, // default: 3000
+    host: "localhost", // default: localhost
+  },
 });

@@ -81,7 +81,6 @@ Initialize checkout transaction on Notch Pay.
 
 ```cURL
 curl https://api.notchpay.co/checkout/initialize
--H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -d '{"business_id":"BUSINESS_ID", "phone":"662611051", "email":"support@notchpay.co", "amount":55000, "currency":"XAF", "description": "Account Top Up"}'
 -X POST
@@ -174,7 +173,6 @@ You can also terminate the transaction with the REST API method.
 
 ```cURL
 curl https://api.notchpay.co/checkout/TRANSACTION_REFERENCE
--H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -d '{"gateway":"mobile", "data": {"phone":"662611051"}}'
 -X POST
@@ -207,11 +205,8 @@ Verify transactions after payments by making a GET request to the endpoint from 
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.co/checkout/TRANSACTION_REFERENCE
--H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
+curl https://api.notchpay.co/verify/TRANSACTION_REFERENCE
 -H "Content-Type: application/json"
--d '{"gateway":"mobile", "data": {"phone":"662611051"}}'
--X POST
 ```
 
   </code-block>
@@ -221,18 +216,5 @@ curl https://api.notchpay.co/checkout/TRANSACTION_REFERENCE
 #### Result format
 
 ```json
-{
-  "amount": 102.50289041843702,
-  "status": "completed",
-  "reference": "fcHVP21FFgqwt3hZ",
-  "description": "App classik APP",
-  "fee": null,
-  "created_at": "2021-02-21T11:39:49.000000Z",
-  "updated_at": "2021-02-28T18:49:59.000000Z",
-  "gateway": "notchpay",
-  "data": {
-    "email": "support@notchpay.co",
-    "phone": "662611051"
-  }
-}
+{ "status": "canceled", "reference": "EEqSVlaq4WXz" }
 ```

@@ -1,5 +1,5 @@
 ---
-title: Exchange
+title: Exchanges
 description: "Notch Pay usage for Financial services."
 position: 2
 category: Guide
@@ -17,7 +17,7 @@ Notch Pay usage for Financial services.
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Exchange API Key](https://business.notchpay.co/settings/apis-webhooks)
+To get access of those endpoint, you need [Exchange API Key](https://exchanges.notchpay.xyz/settings/api)
 
 </alert>
 
@@ -29,7 +29,7 @@ Get currencies available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.co/exchanges/currencies
+curl http://api.notchpay.xyz/exchanges/currencies
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -71,7 +71,7 @@ Get the latest exchange rates available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.co/exchanges/rates
+curl http://api.notchpay.xyz/exchanges/rates
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -123,7 +123,7 @@ Convert any money value from one currency to another at the latest API rates.
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500
+curl http://api.notchpay.xyz/exchanges/convert?from=USD&to=XAF&value=500
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -162,7 +162,46 @@ Result format
   <code-block label="cURL" active>
 
 ```cURL
-curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500&format=false
+curl http://api.notchpay.xyz/exchanges/convert?from=USD&to=XAF&value=500&format=false
+-H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
+-H "Content-Type: application/json"
+-X GET
+```
+
+  </code-block>
+</code-group>
+
+Result format
+
+```json
+{
+  "value": 270648.3995,
+  "from": {
+    "name": "US Dollar",
+    "code": "USD",
+    "symbol": "$",
+    "format": "$1,0.0000",
+    "exchange_rate": "1",
+    "updated_at": "2021-02-20T08:46:02.000000Z"
+  },
+  "to": {
+    "name": "Franc CFA (XAF)",
+    "code": "XAF",
+    "symbol": "F.CFA",
+    "format": "1,0.0000 F.CFA",
+    "exchange_rate": "541.296799",
+    "updated_at": "2021-02-20T08:46:03.000000Z"
+  }
+}
+```
+
+### Conversion based on country code
+
+<code-group>
+  <code-block label="cURL" active>
+
+```cURL
+curl http://api.notchpay.xyz/exchanges/convert?from=USD&country=cm&value=500
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET

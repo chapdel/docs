@@ -31,7 +31,7 @@ You can graphically create plan vie the Business Dashboard.
 
 ```cURL
 curl http://api.notchpay.xyz/plans
--H "N-Authorization: YOUR_BUSINESS_KEY"
+-H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -d '{
     "name": "Monthly subscription",
@@ -185,7 +185,7 @@ curl http://api.notchpay.xyz/subscriptions/initialize
 
 Notch Pay allow you to check status of subscription.
 
-### Formatted result
+#### Example
 
 <code-group>
   <code-block label="cURL" active>
@@ -200,7 +200,7 @@ curl http://api.notchpay.xyz/subscriptions/SUBSCRIPTION_TOKEN/check
   </code-block>
 </code-group>
 
-Result format
+#### Result format
 
 ```json
 {

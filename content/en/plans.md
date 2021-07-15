@@ -91,7 +91,7 @@ Creating a plan with our API
 <td>currency</td>
 <td>String</td>
 <td>Yes</td>
-<td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (http://docs.notchpay.xyz/ressources#currencies) </td>
+<td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (http://docs.notchpay.xyz/resources#currencies) </td>
 </tr>
 <tr>
 <td>trial_interval</td>

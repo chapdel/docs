@@ -1,7 +1,7 @@
 ---
 title: Subscriptions
 description: "Subscriptions allow customers to pay for recurring interval."
-position: 2
+position: 5
 category: Guide
 endpoints:
   - Create Plan
@@ -24,7 +24,7 @@ To get access of those endpoint, you need [Business API Key](https://business.no
 ## Create Plan
 
 The feature help you to decide the amount and interval in which the subscription will be paid. To make subscription payments you need a plan.
-You can graphically create plan vie the Business Dashboard.
+You can graphically create plan vie the Business Dashboard. Visit [Plan](http://docs.notchpay.xyz/plans) for more information's about it.
 
 <code-group>
   <code-block label="cURL" active>

@@ -1,16 +1,27 @@
 ---
 title: Introduction
-description: "Welcome to the Notch Pay Developer Documentation. The guide to build finance experiences with the Notch Pay API."
+description: "Welcome to the Notch Pay Developer Guide. The guide to build finance experiences with the Notch Pay API."
 position: 1
 category: ""
-features:
+guides:
   - Exchange Rates
+  - Plans
+  - Subscriptions
+resources:
+  - Currencies
+  - Countries
 ---
 
-Welcome to the Notch Pay Developer Documentation. The guide to build finance experiences with the Notch Pay API.
+Welcome to the Notch Pay Developer Guide. The guide to build finance experiences with the Notch Pay API.
 
-## Features
+## Guides
 
-Available features
+Available guides
 
-<list :items="features"></list>
+<list :items="guides"></list>
+
+## Resources
+
+Available Resources
+
+<list :items="resources"></list>

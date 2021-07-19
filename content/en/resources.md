@@ -11,1708 +11,2123 @@ Available resources on Notch Pay.
 
 Accepted gateways
 
-```json
-[
-        {
-            "name": "Notch Pay",
-            "type": "generic",
-            "slug": "notchpay",
-        },
-        {
-            "name": "PayPal",
-            "type": "generic",
-            "slug": "paypal",
-        },
-        {
-            "name": "Mobile Money",
-            "type": "mobile",
-            "slug": "mobile",
-        },
-        {
-            "name": "Express Union Mobile",
-            "type": "mobile",
-            "slug": "eumm",
-        },
-        {
-            "name": "Card",
-            "type": "card",
-            "slug": "card",
-        }
-    ]
-```
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>code</th>
+</tr>
+</thead>
+<tr>
+<td>Notch pay</td>
+<td>notchpay</td>
+</tr>
+
+<tr>
+<td>Paypal</td>
+<td>paypal</td>
+</tr>
+
+<tr>
+<td>Mobile Money</td>
+<td>mobile</td>
+</tr>
+<tr>
+
+<td>Express Union Mobile</td>
+<td>eumm</td>
+</tr>
+
+<tr>
+<td>Card</td>
+<td>card</td>
+</tr>
+</table>
 
 ## Currencies
 
 Available currencies
 
-```json
-[
-        {
-            "name": "Afghan Afghani",
-            "code": "AFN"
-        },
-        {
-            "name": "Albanian Lek",
-            "code": "ALL"
-        },
-        {
-            "name": "Algerian Dinar",
-            "code": "DZD"
-        },
-        {
-            "name": "Angolan Kwanza",
-            "code": "AOA"
-        },
-        {
-            "name": "Argentine Peso",
-            "code": "ARS"
-        },
-        {
-            "name": "Armenian Dram",
-            "code": "AMD"
-        },
-        {
-            "name": "Aruban Florin",
-            "code": "AWG"
-        },
-        {
-            "name": "Australian Dollar",
-            "code": "AUD"
-        },
-        {
-            "name": "Azerbaijani Manat",
-            "code": "AZN"
-        },
-        {
-            "name": "Bahamian Dollar",
-            "code": "BSD"
-        },
-        {
-            "name": "Bahraini Dinar",
-            "code": "BHD"
-        },
-        {
-            "name": "Bangladeshi Taka",
-            "code": "BDT"
-        },
-        {
-            "name": "Barbadian Dollar",
-            "code": "BBD"
-        },
-        {
-            "name": "Belarusian Ruble",
-            "code": "BYN"
-        },
-        {
-            "name": "Belize Dollar",
-            "code": "BZD"
-        },
-        {
-            "name": "Bermudan Dollar",
-            "code": "BMD"
-        },
-        {
-            "name": "Bhutanese Ngultrum",
-            "code": "BTN"
-        },
-        {
-            "name": "Bolivian Boliviano",
-            "code": "BOB"
-        },
-        {
-            "name": "Bosnia-Herzegovina Convertible Mark",
-            "code": "BAM"
-        },
-        {
-            "name": "Botswanan Pula",
-            "code": "BWP"
-        },
-        {
-            "name": "Brazilian Real",
-            "code": "BRL"
-        },
-        {
-            "name": "British Pound",
-            "code": "GBP"
-        },
-        {
-            "name": "Brunei Dollar",
-            "code": "BND"
-        },
-        {
-            "name": "Bulgarian Lev",
-            "code": "BGN"
-        },
-        {
-            "name": "Burundian Franc",
-            "code": "BIF"
-        },
-        {
-            "name": "CFP Franc",
-            "code": "XPF"
-        },
-        {
-            "name": "Cambodian Riel",
-            "code": "KHR"
-        },
-        {
-            "name": "Canadian Dollar",
-            "code": "CAD"
-        },
-        {
-            "name": "Cape Verdean Escudo",
-            "code": "CVE"
-        },
-        {
-            "name": "Cayman Islands Dollar",
-            "code": "KYD"
-        },
-        {
-            "name": "Central African CFA Franc",
-            "code": "XAF"
-        },
-        {
-            "name": "Chilean Peso",
-            "code": "CLP"
-        },
-        {
-            "name": "Chinese Yuan",
-            "code": "CNY"
-        },
-        {
-            "name": "Colombian Peso",
-            "code": "COP"
-        },
-        {
-            "name": "Comorian Franc",
-            "code": "KMF"
-        },
-        {
-            "name": "Congolese Franc",
-            "code": "CDF"
-        },
-        {
-            "name": "Costa Rican Colón",
-            "code": "CRC"
-        },
-        {
-            "name": "Croatian Kuna",
-            "code": "HRK"
-        },
-        {
-            "name": "Cuban Convertible Peso",
-            "code": "CUC"
-        },
-        {
-            "name": "Cuban Peso",
-            "code": "CUP"
-        },
-        {
-            "name": "Czech Koruna",
-            "code": "CZK"
-        },
-        {
-            "name": "Danish Krone",
-            "code": "DKK"
-        },
-        {
-            "name": "Djiboutian Franc",
-            "code": "DJF"
-        },
-        {
-            "name": "Dominican Peso",
-            "code": "DOP"
-        },
-        {
-            "name": "East Caribbean Dollar",
-            "code": "XCD"
-        },
-        {
-            "name": "Egyptian Pound",
-            "code": "EGP"
-        },
-        {
-            "name": "Eritrean Nakfa",
-            "code": "ERN"
-        },
-        {
-            "name": "Ethiopian Birr",
-            "code": "ETB"
-        },
-        {
-            "name": "Euro",
-            "code": "EUR"
-        },
-        {
-            "name": "Falkland Islands Pound",
-            "code": "FKP"
-        },
-        {
-            "name": "Fijian Dollar",
-            "code": "FJD"
-        },
-        {
-            "name": "Gambian Dalasi",
-            "code": "GMD"
-        },
-        {
-            "name": "Georgian Lari",
-            "code": "GEL"
-        },
-        {
-            "name": "Ghanaian Cedi",
-            "code": "GHS"
-        },
-        {
-            "name": "Gibraltar Pound",
-            "code": "GIP"
-        },
-        {
-            "name": "Guatemalan Quetzal",
-            "code": "GTQ"
-        },
-        {
-            "name": "Guinean Franc",
-            "code": "GNF"
-        },
-        {
-            "name": "Guyanaese Dollar",
-            "code": "GYD"
-        },
-        {
-            "name": "Haitian Gourde",
-            "code": "HTG"
-        },
-        {
-            "name": "Honduran Lempira",
-            "code": "HNL"
-        },
-        {
-            "name": "Hong Kong Dollar",
-            "code": "HKD"
-        },
-        {
-            "name": "Hungarian Forint",
-            "code": "HUF"
-        },
-        {
-            "name": "Icelandic Króna",
-            "code": "ISK"
-        },
-        {
-            "name": "Indian Rupee",
-            "code": "INR"
-        },
-        {
-            "name": "Indonesian Rupiah",
-            "code": "IDR"
-        },
-        {
-            "name": "Iranian Rial",
-            "code": "IRR"
-        },
-        {
-            "name": "Iraqi Dinar",
-            "code": "IQD"
-        },
-        {
-            "name": "Israeli New Shekel",
-            "code": "ILS"
-        },
-        {
-            "name": "Jamaican Dollar",
-            "code": "JMD"
-        },
-        {
-            "name": "Japanese Yen",
-            "code": "JPY"
-        },
-        {
-            "name": "Jordanian Dinar",
-            "code": "JOD"
-        },
-        {
-            "name": "Kazakhstani Tenge",
-            "code": "KZT"
-        },
-        {
-            "name": "Kenyan Shilling",
-            "code": "KES"
-        },
-        {
-            "name": "Kuwaiti Dinar",
-            "code": "KWD"
-        },
-        {
-            "name": "Kyrgystani Som",
-            "code": "KGS"
-        },
-        {
-            "name": "Laotian Kip",
-            "code": "LAK"
-        },
-        {
-            "name": "Lebanese Pound",
-            "code": "LBP"
-        },
-        {
-            "name": "Lesotho Loti",
-            "code": "LSL"
-        },
-        {
-            "name": "Liberian Dollar",
-            "code": "LRD"
-        },
-        {
-            "name": "Libyan Dinar",
-            "code": "LYD"
-        },
-        {
-            "name": "Macanese Pataca",
-            "code": "MOP"
-        },
-        {
-            "name": "Macedonian Denar",
-            "code": "MKD"
-        },
-        {
-            "name": "Malagasy Ariary",
-            "code": "MGA"
-        },
-        {
-            "name": "Malawian Kwacha",
-            "code": "MWK"
-        },
-        {
-            "name": "Malaysian Ringgit",
-            "code": "MYR"
-        },
-        {
-            "name": "Maldivian Rufiyaa",
-            "code": "MVR"
-        },
-        {
-            "name": "Maltese Lira",
-            "code": "MTL"
-        },
-        {
-            "name": "Mauritian Rupee",
-            "code": "MUR"
-        },
-        {
-            "name": "Mexican Peso",
-            "code": "MXN"
-        },
-        {
-            "name": "Moldovan Leu",
-            "code": "MDL"
-        },
-        {
-            "name": "Mongolian Tugrik",
-            "code": "MNT"
-        },
-        {
-            "name": "Moroccan Dirham",
-            "code": "MAD"
-        },
-        {
-            "name": "Mozambican Metical",
-            "code": "MZN"
-        },
-        {
-            "name": "Myanmar Kyat",
-            "code": "MMK"
-        },
-        {
-            "name": "Namibian Dollar",
-            "code": "NAD"
-        },
-        {
-            "name": "Nepalese Rupee",
-            "code": "NPR"
-        },
-        {
-            "name": "Netherlands Antillean Guilder",
-            "code": "ANG"
-        },
-        {
-            "name": "New Taiwan Dollar",
-            "code": "TWD"
-        },
-        {
-            "name": "New Zealand Dollar",
-            "code": "NZD"
-        },
-        {
-            "name": "Nicaraguan Córdoba",
-            "code": "NIO"
-        },
-        {
-            "name": "Nigerian Naira",
-            "code": "NGN"
-        },
-        {
-            "name": "North Korean Won",
-            "code": "KPW"
-        },
-        {
-            "name": "Norwegian Krone",
-            "code": "NOK"
-        },
-        {
-            "name": "Omani Rial",
-            "code": "OMR"
-        },
-        {
-            "name": "Pakistani Rupee",
-            "code": "PKR"
-        },
-        {
-            "name": "Panamanian Balboa",
-            "code": "PAB"
-        },
-        {
-            "name": "Papua New Guinean Kina",
-            "code": "PGK"
-        },
-        {
-            "name": "Paraguayan Guarani",
-            "code": "PYG"
-        },
-        {
-            "name": "Peruvian Sol",
-            "code": "PEN"
-        },
-        {
-            "name": "Philippine Peso",
-            "code": "PHP"
-        },
-        {
-            "name": "Polish Zloty",
-            "code": "PLN"
-        },
-        {
-            "name": "Qatari Rial",
-            "code": "QAR"
-        },
-        {
-            "name": "Romanian Leu",
-            "code": "RON"
-        },
-        {
-            "name": "Russian Ruble",
-            "code": "RUB"
-        },
-        {
-            "name": "Rwandan Franc",
-            "code": "RWF"
-        },
-        {
-            "name": "Salvadoran Colón",
-            "code": "SVC"
-        },
-        {
-            "name": "Samoan Tala",
-            "code": "WST"
-        },
-        {
-            "name": "Saudi Riyal",
-            "code": "SAR"
-        },
-        {
-            "name": "Serbian Dinar",
-            "code": "RSD"
-        },
-        {
-            "name": "Seychellois Rupee",
-            "code": "SCR"
-        },
-        {
-            "name": "Sierra Leonean Leone",
-            "code": "SLL"
-        },
-        {
-            "name": "Singapore Dollar",
-            "code": "SGD"
-        },
-        {
-            "name": "Solomon Islands Dollar",
-            "code": "SBD"
-        },
-        {
-            "name": "Somali Shilling",
-            "code": "SOS"
-        },
-        {
-            "name": "South African Rand",
-            "code": "ZAR"
-        },
-        {
-            "name": "South Korean Won",
-            "code": "KRW"
-        },
-        {
-            "name": "South Sudanese Pound",
-            "code": "SSP"
-        },
-        {
-            "name": "Sri Lankan Rupee",
-            "code": "LKR"
-        },
-        {
-            "name": "St. Helena Pound",
-            "code": "SHP"
-        },
-        {
-            "name": "Sudanese Pound",
-            "code": "SDG"
-        },
-        {
-            "name": "Surinamese Dollar",
-            "code": "SRD"
-        },
-        {
-            "name": "Swazi Lilangeni",
-            "code": "SZL"
-        },
-        {
-            "name": "Swedish Krona",
-            "code": "SEK"
-        },
-        {
-            "name": "Swiss Franc",
-            "code": "CHF"
-        },
-        {
-            "name": "Syrian Pound",
-            "code": "SYP"
-        },
-        {
-            "name": "Tajikistani Somoni",
-            "code": "TJS"
-        },
-        {
-            "name": "Tanzanian Shilling",
-            "code": "TZS"
-        },
-        {
-            "name": "Thai Baht",
-            "code": "THB"
-        },
-        {
-            "name": "Tongan Paʻanga",
-            "code": "TOP"
-        },
-        {
-            "name": "Trinidad & Tobago Dollar",
-            "code": "TTD"
-        },
-        {
-            "name": "Tunisian Dinar",
-            "code": "TND"
-        },
-        {
-            "name": "Turkish Lira",
-            "code": "TRY"
-        },
-        {
-            "name": "Turkmenistani Manat",
-            "code": "TMT"
-        },
-        {
-            "name": "US Dollar",
-            "code": "USD"
-        },
-        {
-            "name": "Ugandan Shilling",
-            "code": "UGX"
-        },
-        {
-            "name": "Ukrainian Hryvnia",
-            "code": "UAH"
-        },
-        {
-            "name": "United Arab Emirates Dirham",
-            "code": "AED"
-        },
-        {
-            "name": "Uruguayan Peso",
-            "code": "UYU"
-        },
-        {
-            "name": "Uzbekistani Som",
-            "code": "UZS"
-        },
-        {
-            "name": "Vanuatu Vatu",
-            "code": "VUV"
-        },
-        {
-            "name": "Vietnamese Dong",
-            "code": "VND"
-        },
-        {
-            "name": "West African CFA Franc",
-            "code": "XOF"
-        },
-        {
-            "name": "Yemeni Rial",
-            "code": "YER"
-        },
-        {
-            "name": "Zambian Kwacha",
-            "code": "ZMW"
-        },
-        {
-            "name": "Zimbabwean Dollar",
-            "code": "ZWL"
-        }
-    ]
-```
+<table>
+<thead>
+<tr>
+<td>Name</td>
+<td>Code</td>
+</tr>
+</thead>
+<tr>
+<td>Afghan Afghani</td>
+<td>AFN</td>
+</tr>
+
+<tr>
+<td>Albanian Lek</td>
+<td>ALL</td>
+</tr>
+
+<tr>
+<td>Algerian Dinar</td>
+<td>DZD</td>
+</tr>
+
+<tr>
+<td>Anolan KWanza</td>
+<td>AOA</td>
+</tr>
+
+<tr>
+<td>Argentine Peso</td>
+<td>ARS</td>
+</tr>
+
+<tr>
+<td>Armenian dram</td>
+<td>AMD</td>
+</tr>
+
+<tr>
+<td>Aruban Florin</td>
+<td>AWG</td>
+</tr>
+
+<tr>
+<td>Australian Dollar</td>
+<td>AUD</td>
+</tr>
+
+<tr>
+<td>Azerbaijani Manat</td>
+<td>AZN</td>
+</tr>
+
+<tr>
+<td>Bahamian Dollar</td>
+<td>BSD</td>
+</tr>
+
+<tr>
+<td>Bahraini Dinar</td>
+<td>BHD</td>
+</tr>
+
+<tr>
+<td>Bangladeshi Taka</td>
+<td>BDT</td>
+</tr>
+
+<tr>
+<td>Barbadian Dollar</td>
+<td>BBD</td>
+</tr>
+
+<tr>
+<td>Belarusian Ruble</td>
+<td>BYN</td>
+</tr>
+
+<tr>
+<td>Belize dollar</td>
+<td>BZD</td>
+</tr>
+
+<tr>
+<td>Bermudan Dollar</td>
+<td>BMD</td>
+</tr>
+
+<tr>
+<td>Bhutanese Ngultrum</td>
+<td>BTN</td>
+</tr>
+
+<tr>
+<td>Bolivian Boliviano</td>
+<td>BOB</td>
+</tr>
+
+<tr>
+<td>BOsnia-Herzegovina Convertible mark</td>
+<td>BAM</td>
+</tr>
+
+<tr>
+<td>Botswanan Pula</td>
+<td>BWP</td>
+</tr>
+
+<tr>
+<td>Brazilian Real</td>
+<td>BRL</td>
+</tr>
+
+<tr>
+<td>British pound</td>
+<td>GBP</td>
+</tr>
+
+<tr>
+<td>Brunei Dollar</td>
+<td>BND</td>
+</tr>
+
+<tr>
+<td>Bulgarian Lev</td>
+<td>BGN</td>
+</tr>
+
+<tr>
+<td>Burundian franc</td>
+<td>BIF</td>
+</tr>
+
+<tr>
+<td>CFP Franc</td>
+<td>XPF</td>
+</tr>
+
+<tr>
+<td>Cambodian Riel</td>
+<td>KHR</td>
+</tr>
+
+<tr>
+<td>Canadian Dollar</td>
+<td>CAD</td>
+</tr>
+
+<tr>
+<td>Cape Verdean Escudo</td>
+<td>CVE</td>
+</tr>
+
+<tr>
+<td>Cayman Islands Dollar</td>
+<td>KYD</td>
+</tr>
+
+<tr>
+<td>Central African CFA Franc</td>
+<td>XAF</td>
+</tr>
+
+<tr>
+<td>Chilean Peso</td>
+<td>CLP</td>
+</tr>
+
+<tr>
+<td>Chinese Yuan</td>
+<td>CNY</td>
+</tr>
+
+<tr>
+<td>Colombian Peso</td>
+<td>COP</td>
+</tr>
+                        
+<tr>
+<td>Comorian Franc</td>
+<td>KMF</td>
+</tr>
+
+<tr>
+<td>Congolese Franc</td>
+<td>CDF</td>
+</tr>
+
+<tr>
+<td>Costa Rican Colón</td>
+<td>CRC</td>
+</tr>
+
+<tr>
+<td>Croatian Kuna</td>
+<td>HRK</td>
+</tr>
+
+<tr>
+<td>Cuban Convertible Peso</td>
+<td>CUC</td>
+</tr>
+
+<tr>
+<td>Cuban Peso</td>
+<td>CUP</td>
+</tr>
+
+<tr>
+<td>Czech Koruna</td>
+<td>CZK</td>
+</tr>
+
+<tr>
+<td>Danish Krone</td>
+<td>DKK</td>
+</tr>
+
+<tr>
+<td>Djiboutian Franc</td>
+<td>DJF</td>
+</tr>
+
+<tr>
+<td>Dominican Peso</td>
+<td>DOP</td>
+</tr>
+
+<tr>
+<td>East Caribbean Dollar</td>
+<td>XCD</td>
+</tr>
+
+<tr>
+<td>Egyptian Pound</td>
+<td>EGP</td>
+</tr>
+
+<tr>
+<td>Eritrean Nakfa</td>
+<td>ERN</td>
+</tr>
+
+<tr>
+<td>Ethiopian Birr</td>
+<td>ETB</td>
+</tr>
+
+<tr>
+<td>Euro</td>
+<td>EUR</td>
+</tr>
+
+<tr>
+<td>Falkland Islands Pound</td>
+<td>FKP</td>
+</tr>
+
+<tr>
+<td>Fijian Dollar</td>
+<td>FJD</td>
+</tr>
+
+<tr>
+<td>Gambian Dalasi</td>
+<td>GMD</td>
+</tr>
+
+<tr>
+<td>Georgian Lari</td>
+<td>GEL</td>
+</tr>
+
+<tr>
+<td>Ghanaian Cedi</td>
+<td>GHS</td>
+</tr>
+
+<tr>
+<td>Gibraltar Pound</td>
+<td>GIP</td>
+</tr>
+
+<tr>
+<td>Guatemalan Quetzal</td>
+<td>GTQ</td>
+</tr>
+
+<tr>
+<td>Guinean Franc</td>
+<td>GNF</td>
+</tr>
+
+<tr>
+<td>Guyanaese Dollar</td>
+<td>GYD</td>
+</tr>
+
+<tr>
+<td>Haitian Gourde</td>
+<td>HTG</td>
+</tr>
+
+<tr>
+<td>Honduran Lempira</td>
+<td>HNL</td>
+</tr>
+
+<tr>
+<td>Hong Kong Dollar</td>
+<td>HKD</td>
+</tr>
+
+<tr>
+<td>Hungarian Forint</td>
+<td>HUF</td>
+</tr>
+
+<tr>
+<td>Icelanddic Króna</td>
+<td>ISK</td>
+</tr>
+
+<tr>
+<td>Indian Rupee</td>
+<td>INR</td>
+</tr>
+
+<tr>
+<td>Indonesian Rupiah</td>
+<td>IDR</td>
+</tr>
+
+<tr>
+<td>Iranian Rial</td>
+<td>IRR</td>
+</tr>
+
+<tr>
+<td>Iraqi Dinar</td>
+<td>IQD</td>
+</tr>
+
+<tr>
+<td>Israeli New Shekel</td>
+<td>ILS</td>
+</tr>
+
+<tr>
+<td>Jamaican Dollar</td>
+<td>JMD</td>
+</tr>
+
+<tr>
+<td>Japanese Yen</td>
+<td>JPY</td>
+</tr>
+
+<tr>
+<td>Jordanian Dinar</td>
+<td>JOD</td>
+</tr>
+
+<tr>
+<td>Kazakhstani Tenge</td>
+<td>KZT</td>
+</tr>
+
+<tr>
+<td>Kenyan Shilling</td>
+<td>KES</td>
+</tr>
+
+<tr>
+<td>Kuwaiti Dinar</td>
+<td>KWD</td>
+</tr>
+
+<tr>
+<td>Kyrgystani Som</td>
+<td>KGS</td>
+</tr>
+
+<tr>
+<td>Laotian Kip</td>
+<td>LAK</td>
+</tr>
+
+<tr>
+<td>Lebanese Pound</td>
+<td>LBP</td>
+</tr>
+
+<tr>
+<td>Lesotho Loti</td>
+<td>LSL</td>
+</tr>
+
+<tr>
+<td>Liberian Dollar</td>
+<td>LRD</td>
+</tr>
+            
+<tr>
+<td>Libyan Dinar</td>
+<td>LYD</td>
+</tr>
+
+<tr>
+<td>Macanese Pataca</td>
+<td>MOP</td>
+</tr>
+
+<tr>
+<td>Macedonian Denar</td>
+<td>MKD</td>
+</tr>
+
+<tr>
+<td>Malagasy Ariary</td>
+<td>MGA</td>
+</tr>
+
+<tr>
+<td>Malawian Kwacha</td>
+<td>MWK</td>
+</tr>
+
+<tr>
+<td>Malaysian Ringgit</td>
+<td>MYR</td>
+</tr>
+
+<tr>
+<td>Maldivian Rufiyaa</td>
+<td>MVR</td>
+</tr>
+
+<tr>
+<td>Maltese Lira</td>
+<td>MTL</td>
+</tr>
+
+<tr>
+<td>Mauritian Rupee</td>
+<td>MUR</td>
+</tr>
+
+<tr>
+<td>Mexican Peso</td>
+<td>MXN</td>
+</tr>
+
+<tr>
+<td>Moldovan Leu</td>
+<td>MDL</td>
+</tr>
+
+<tr>
+<td>Mongolian Tugrik</td>
+<td>MNT</td>
+</tr>
+
+<tr>
+<td>Moroccan Dirham</td>
+<td>MAD</td>
+</tr>
+
+<tr>
+<td>Mozambican Metical</td>
+<td>MZN</td>
+</tr>
+
+<tr>
+<td>Myanmar Kyat</td>
+<td>MMK</td>
+</tr>
+
+<tr>
+<td>Namibian Dollar</td>
+<td>NAD</td>
+</tr>
+
+<tr>
+<td>Nepalese Rupee</td>
+<td>NPR</td>
+</tr>
+
+<tr>
+<td>Netherlands Antillean Guilder</td>
+<td>ANG</td>
+</tr>
+
+<tr>
+<td>New Taiwan Dollar</td>
+<td>TWD</td>
+</tr>
+
+<tr>
+<td>New Zealand Dollar</td>
+<td>NZD</td>
+</tr>
+
+<tr>
+<td>Nicaraguan Córdoba</td>
+<td>NIO</td>
+</tr>
+
+<tr>
+<td>North Korean Won</td>
+<td>KPW</td>
+</tr>
+
+<tr>
+<td>Norwegian Krone</td>
+<td>NOK</td>
+</tr>
+
+<tr>
+<td>Omani Rial</td>
+<td>OMR</td>
+</tr>
+
+<tr>
+<td>Pakistani Rupee</td>
+<td>PKR</td>
+</tr>
+
+<tr>
+<td>Panamanian Balboa</td>
+<td>PAB</td>
+</tr>
+
+<tr>
+<td>Papua New Guinean Kina</td>
+<td>PGK</td>
+</tr>
+
+<tr>
+<td>Paraguayan Guarani</td>
+<td>PYG</td>
+</tr>
+
+<tr>
+<td>Peruvian Sol</td>
+<td>PEN</td>
+</tr>
+
+<tr>
+<td>Philippine Peso</td>
+<td>PHP</td>
+</tr>
+
+<tr>
+<td>Polish Zloty</td>
+<td>PNL</td>
+</tr>
+
+<tr>
+<td>Qatari Rial</td>
+<td>QAR</td>
+</tr>
+
+<tr>
+<td>Romanian Leu</td>
+<td>RON</td>
+</tr>
+
+<tr>
+<td>Russian Ruble</td>
+<td>RUB</td>
+</tr>
+
+<tr>
+<td>Rwandan Franc</td>
+<td>RWF</td>
+</tr>
+
+<tr>
+<td>Salvadoran Colón</td>
+<td>SVC</td>
+</tr>
+
+<tr>
+<td>Samoan Tala</td>
+<td>WST</td>
+</tr>
+
+<tr>
+<td>Saudi Riyal</td>
+<td>SAR</td>
+</tr>
+
+<tr>
+<td>Serbian Dinar</td>
+<td>RSD</td>
+</tr>
+
+<tr>
+<td>Seychellois Rupee</td>
+<td>SCR</td>
+</tr>
+
+<tr>
+<td>Sierra Leonean Leone</td>
+<td>SLL</td>
+</tr>
+
+<tr>
+<td>Singapore Dollar</td>
+<td>SGD</td>
+</tr>
+
+<tr>
+<td>Solomon Islands Dollar</td>
+<td>SBD</td>
+</tr>
+
+<tr>
+<td>Somali Shilling</td>
+<td>SOS</td>
+</tr>
+
+<tr>
+<td>South African Rand</td>
+<td>ZAR</td>
+</tr>
+
+<tr>
+<td>South Korean Won</td>
+<td>KRW</td>
+</tr>
+
+<tr>
+<td>South Sudanese Pound</td>
+<td>SSP</td>
+</tr>
+
+<tr>
+<td>Sri Lankan Rupee</td>
+<td>LKR</td>
+</tr>
+
+<tr>
+<td>St. Helena Pound</td>
+<td>SHP</td>
+</tr>
+
+<tr>
+<td>Sudanese Pound</td>
+<td>SDG</td>
+</tr>
+
+<tr>
+<td>Surinamese Dollar</td>
+<td>SRD</td>
+</tr>
+
+<tr>
+<td>Swazi Lilangeni</td>
+<td>SZL</td>
+</tr>
+
+<tr>
+<td>Swedish Krona</td>
+<td>SEK</td>
+</tr>
+
+<tr>
+<td>Swiss Franc</td>
+<td>CHF</td>
+</tr>
+
+<tr>
+<td>Syrian Pound</td>
+<td>SYP</td>
+</tr>
+
+<tr>
+<td>Tajikistani Somoni</td>
+<td>TJS</td>
+</tr>
+
+<tr>
+<td>Tanzanian Shilling</td>
+<td>TZS</td>
+</tr>
+
+<tr>
+<td>Thai Baht</td>
+<td>THB</td>
+</tr>
+
+<tr>
+<td>Tongan Pa'anga</td>
+<td>TOP</td>
+</tr>
+
+<tr>
+<td>Trinidad & Tobago Dollar</td>
+<td>TTD</td>
+</tr>
+
+<tr>
+<td>Tunisian Dinar</td>
+<td>TND</td>
+</tr>
+
+<tr>
+<td>Turkish Lira</td>
+<td>TRY</td>
+</tr>
+
+<tr>
+<td>Turkmenistani Manat</td>
+<td>TMT</td>
+</tr>
+
+<tr>
+<td>US Dollar</td>
+<td>USD</td>
+</tr>
+
+<tr>
+<td>Ugandan Shilling</td>
+<td>UGX</td>
+</tr>
+
+<tr>
+<td>Ukrainian Hryvnia</td>
+<td>UAH</td>
+</tr>
+
+<tr>
+<td>United Arab Emirates Dirham</td>
+<td>AED</td>
+</tr>
+
+<tr>
+<td>Uruguayan Peso</td>
+<td>UYU</td>
+</tr>
+
+<tr>
+<td>Uzbekistani Som</td>
+<td>UZS</td>
+</tr>
+
+<tr>
+<td>Vanuatu Vatu</td>
+<td>VUV</td>
+</tr>
+
+<tr>
+<td>Vietnamese Dong</td>
+<td>VND</td>
+</tr>
+
+<tr>
+<td>West African CFA Franc</td>
+<td>XOF</td>
+</tr>
+
+<tr>
+<td>Yemeni Rial</td>
+<td>YER</td>
+</tr>
+
+<tr>
+<td>Zambian Kwacha</td>
+<td>ZMW</td>
+</tr>
+
+<tr>
+<td>Zimbabween Dollar</td>
+<td>ZWL</td>
+</tr>
+</table>
 
 ## Countries
 
-Available currencies
+Available Countries
 
-```json
-[
-        {
-            "name": "Afghanistan",
-            "iso_code": "AF"
-        },
-        {
-            "name": "Åland Islands",
-            "iso_code": "AX"
-        },
-        {
-            "name": "Albania",
-            "iso_code": "AL"
-        },
-        {
-            "name": "Algeria",
-            "iso_code": "DZ"
-        },
-        {
-            "name": "American Samoa",
-            "iso_code": "AS"
-        },
-        {
-            "name": "Andorra",
-            "iso_code": "AD"
-        },
-        {
-            "name": "Angola",
-            "iso_code": "AO"
-        },
-        {
-            "name": "Anguilla",
-            "iso_code": "AI"
-        },
-        {
-            "name": "Antarctica",
-            "iso_code": "AQ"
-        },
-        {
-            "name": "Antigua & Barbuda",
-            "iso_code": "AG"
-        },
-        {
-            "name": "Argentina",
-            "iso_code": "AR"
-        },
-        {
-            "name": "Armenia",
-            "iso_code": "AM"
-        },
-        {
-            "name": "Aruba",
-            "iso_code": "AW"
-        },
-        {
-            "name": "Ascension Island",
-            "iso_code": "AC"
-        },
-        {
-            "name": "Australia",
-            "iso_code": "AU"
-        },
-        {
-            "name": "Austria",
-            "iso_code": "AT"
-        },
-        {
-            "name": "Azerbaijan",
-            "iso_code": "AZ"
-        },
-        {
-            "name": "Bahamas",
-            "iso_code": "BS"
-        },
-        {
-            "name": "Bahrain",
-            "iso_code": "BH"
-        },
-        {
-            "name": "Bangladesh",
-            "iso_code": "BD"
-        },
-        {
-            "name": "Barbados",
-            "iso_code": "BB"
-        },
-        {
-            "name": "Belarus",
-            "iso_code": "BY"
-        },
-        {
-            "name": "Belgium",
-            "iso_code": "BE"
-        },
-        {
-            "name": "Belize",
-            "iso_code": "BZ"
-        },
-        {
-            "name": "Benin",
-            "iso_code": "BJ"
-        },
-        {
-            "name": "Bermuda",
-            "iso_code": "BM"
-        },
-        {
-            "name": "Bhutan",
-            "iso_code": "BT"
-        },
-        {
-            "name": "Bolivia",
-            "iso_code": "BO"
-        },
-        {
-            "name": "Bosnia & Herzegovina",
-            "iso_code": "BA"
-        },
-        {
-            "name": "Botswana",
-            "iso_code": "BW"
-        },
-        {
-            "name": "Brazil",
-            "iso_code": "BR"
-        },
-        {
-            "name": "British Indian Ocean Territory",
-            "iso_code": "IO"
-        },
-        {
-            "name": "British Virgin Islands",
-            "iso_code": "VG"
-        },
-        {
-            "name": "Brunei",
-            "iso_code": "BN"
-        },
-        {
-            "name": "Bulgaria",
-            "iso_code": "BG"
-        },
-        {
-            "name": "Burkina Faso",
-            "iso_code": "BF"
-        },
-        {
-            "name": "Burundi",
-            "iso_code": "BI"
-        },
-        {
-            "name": "Cambodia",
-            "iso_code": "KH"
-        },
-        {
-            "name": "Cameroon",
-            "iso_code": "CM"
-        },
-        {
-            "name": "Canada",
-            "iso_code": "CA"
-        },
-        {
-            "name": "Canary Islands",
-            "iso_code": "IC"
-        },
-        {
-            "name": "Cape Verde",
-            "iso_code": "CV"
-        },
-        {
-            "name": "Caribbean Netherlands",
-            "iso_code": "BQ"
-        },
-        {
-            "name": "Cayman Islands",
-            "iso_code": "KY"
-        },
-        {
-            "name": "Central African Republic",
-            "iso_code": "CF"
-        },
-        {
-            "name": "Ceuta & Melilla",
-            "iso_code": "EA"
-        },
-        {
-            "name": "Chad",
-            "iso_code": "TD"
-        },
-        {
-            "name": "Chile",
-            "iso_code": "CL"
-        },
-        {
-            "name": "China",
-            "iso_code": "CN"
-        },
-        {
-            "name": "Christmas Island",
-            "iso_code": "CX"
-        },
-        {
-            "name": "Cocos (Keeling) Islands",
-            "iso_code": "CC"
-        },
-        {
-            "name": "Colombia",
-            "iso_code": "CO"
-        },
-        {
-            "name": "Comoros",
-            "iso_code": "KM"
-        },
-        {
-            "name": "Congo - Brazzaville",
-            "iso_code": "CG"
-        },
-        {
-            "name": "Congo - Kinshasa",
-            "iso_code": "CD"
-        },
-        {
-            "name": "Cook Islands",
-            "iso_code": "CK"
-        },
-        {
-            "name": "Costa Rica",
-            "iso_code": "CR"
-        },
-        {
-            "name": "Côte d’Ivoire",
-            "iso_code": "CI"
-        },
-        {
-            "name": "Croatia",
-            "iso_code": "HR"
-        },
-        {
-            "name": "Cuba",
-            "iso_code": "CU"
-        },
-        {
-            "name": "Curaçao",
-            "iso_code": "CW"
-        },
-        {
-            "name": "Cyprus",
-            "iso_code": "CY"
-        },
-        {
-            "name": "Czechia",
-            "iso_code": "CZ"
-        },
-        {
-            "name": "Denmark",
-            "iso_code": "DK"
-        },
-        {
-            "name": "Diego Garcia",
-            "iso_code": "DG"
-        },
-        {
-            "name": "Djibouti",
-            "iso_code": "DJ"
-        },
-        {
-            "name": "Dominica",
-            "iso_code": "DM"
-        },
-        {
-            "name": "Dominican Republic",
-            "iso_code": "DO"
-        },
-        {
-            "name": "Ecuador",
-            "iso_code": "EC"
-        },
-        {
-            "name": "Egypt",
-            "iso_code": "EG"
-        },
-        {
-            "name": "El Salvador",
-            "iso_code": "SV"
-        },
-        {
-            "name": "Equatorial Guinea",
-            "iso_code": "GQ"
-        },
-        {
-            "name": "Eritrea",
-            "iso_code": "ER"
-        },
-        {
-            "name": "Estonia",
-            "iso_code": "EE"
-        },
-        {
-            "name": "Eswatini",
-            "iso_code": "SZ"
-        },
-        {
-            "name": "Ethiopia",
-            "iso_code": "ET"
-        },
-        {
-            "name": "Falkland Islands",
-            "iso_code": "FK"
-        },
-        {
-            "name": "Faroe Islands",
-            "iso_code": "FO"
-        },
-        {
-            "name": "Fiji",
-            "iso_code": "FJ"
-        },
-        {
-            "name": "Finland",
-            "iso_code": "FI"
-        },
-        {
-            "name": "France",
-            "iso_code": "FR"
-        },
-        {
-            "name": "French Guiana",
-            "iso_code": "GF"
-        },
-        {
-            "name": "French Polynesia",
-            "iso_code": "PF"
-        },
-        {
-            "name": "French Southern Territories",
-            "iso_code": "TF"
-        },
-        {
-            "name": "Gabon",
-            "iso_code": "GA"
-        },
-        {
-            "name": "Gambia",
-            "iso_code": "GM"
-        },
-        {
-            "name": "Georgia",
-            "iso_code": "GE"
-        },
-        {
-            "name": "Germany",
-            "iso_code": "DE"
-        },
-        {
-            "name": "Ghana",
-            "iso_code": "GH"
-        },
-        {
-            "name": "Gibraltar",
-            "iso_code": "GI"
-        },
-        {
-            "name": "Greece",
-            "iso_code": "GR"
-        },
-        {
-            "name": "Greenland",
-            "iso_code": "GL"
-        },
-        {
-            "name": "Grenada",
-            "iso_code": "GD"
-        },
-        {
-            "name": "Guadeloupe",
-            "iso_code": "GP"
-        },
-        {
-            "name": "Guam",
-            "iso_code": "GU"
-        },
-        {
-            "name": "Guatemala",
-            "iso_code": "GT"
-        },
-        {
-            "name": "Guernsey",
-            "iso_code": "GG"
-        },
-        {
-            "name": "Guinea",
-            "iso_code": "GN"
-        },
-        {
-            "name": "Guinea-Bissau",
-            "iso_code": "GW"
-        },
-        {
-            "name": "Guyana",
-            "iso_code": "GY"
-        },
-        {
-            "name": "Haiti",
-            "iso_code": "HT"
-        },
-        {
-            "name": "Honduras",
-            "iso_code": "HN"
-        },
-        {
-            "name": "Hong Kong SAR China",
-            "iso_code": "HK"
-        },
-        {
-            "name": "Hungary",
-            "iso_code": "HU"
-        },
-        {
-            "name": "Iceland",
-            "iso_code": "IS"
-        },
-        {
-            "name": "India",
-            "iso_code": "IN"
-        },
-        {
-            "name": "Indonesia",
-            "iso_code": "ID"
-        },
-        {
-            "name": "Iran",
-            "iso_code": "IR"
-        },
-        {
-            "name": "Iraq",
-            "iso_code": "IQ"
-        },
-        {
-            "name": "Ireland",
-            "iso_code": "IE"
-        },
-        {
-            "name": "Isle of Man",
-            "iso_code": "IM"
-        },
-        {
-            "name": "Israel",
-            "iso_code": "IL"
-        },
-        {
-            "name": "Italy",
-            "iso_code": "IT"
-        },
-        {
-            "name": "Jamaica",
-            "iso_code": "JM"
-        },
-        {
-            "name": "Japan",
-            "iso_code": "JP"
-        },
-        {
-            "name": "Jersey",
-            "iso_code": "JE"
-        },
-        {
-            "name": "Jordan",
-            "iso_code": "JO"
-        },
-        {
-            "name": "Kazakhstan",
-            "iso_code": "KZ"
-        },
-        {
-            "name": "Kenya",
-            "iso_code": "KE"
-        },
-        {
-            "name": "Kiribati",
-            "iso_code": "KI"
-        },
-        {
-            "name": "Kosovo",
-            "iso_code": "XK"
-        },
-        {
-            "name": "Kuwait",
-            "iso_code": "KW"
-        },
-        {
-            "name": "Kyrgyzstan",
-            "iso_code": "KG"
-        },
-        {
-            "name": "Laos",
-            "iso_code": "LA"
-        },
-        {
-            "name": "Latvia",
-            "iso_code": "LV"
-        },
-        {
-            "name": "Lebanon",
-            "iso_code": "LB"
-        },
-        {
-            "name": "Lesotho",
-            "iso_code": "LS"
-        },
-        {
-            "name": "Liberia",
-            "iso_code": "LR"
-        },
-        {
-            "name": "Libya",
-            "iso_code": "LY"
-        },
-        {
-            "name": "Liechtenstein",
-            "iso_code": "LI"
-        },
-        {
-            "name": "Lithuania",
-            "iso_code": "LT"
-        },
-        {
-            "name": "Luxembourg",
-            "iso_code": "LU"
-        },
-        {
-            "name": "Macao SAR China",
-            "iso_code": "MO"
-        },
-        {
-            "name": "Madagascar",
-            "iso_code": "MG"
-        },
-        {
-            "name": "Malawi",
-            "iso_code": "MW"
-        },
-        {
-            "name": "Malaysia",
-            "iso_code": "MY"
-        },
-        {
-            "name": "Maldives",
-            "iso_code": "MV"
-        },
-        {
-            "name": "Mali",
-            "iso_code": "ML"
-        },
-        {
-            "name": "Malta",
-            "iso_code": "MT"
-        },
-        {
-            "name": "Marshall Islands",
-            "iso_code": "MH"
-        },
-        {
-            "name": "Martinique",
-            "iso_code": "MQ"
-        },
-        {
-            "name": "Mauritania",
-            "iso_code": "MR"
-        },
-        {
-            "name": "Mauritius",
-            "iso_code": "MU"
-        },
-        {
-            "name": "Mayotte",
-            "iso_code": "YT"
-        },
-        {
-            "name": "Mexico",
-            "iso_code": "MX"
-        },
-        {
-            "name": "Micronesia",
-            "iso_code": "FM"
-        },
-        {
-            "name": "Moldova",
-            "iso_code": "MD"
-        },
-        {
-            "name": "Monaco",
-            "iso_code": "MC"
-        },
-        {
-            "name": "Mongolia",
-            "iso_code": "MN"
-        },
-        {
-            "name": "Montenegro",
-            "iso_code": "ME"
-        },
-        {
-            "name": "Montserrat",
-            "iso_code": "MS"
-        },
-        {
-            "name": "Morocco",
-            "iso_code": "MA"
-        },
-        {
-            "name": "Mozambique",
-            "iso_code": "MZ"
-        },
-        {
-            "name": "Myanmar (Burma)",
-            "iso_code": "MM"
-        },
-        {
-            "name": "Namibia",
-            "iso_code": "NA"
-        },
-        {
-            "name": "Nauru",
-            "iso_code": "NR"
-        },
-        {
-            "name": "Nepal",
-            "iso_code": "NP"
-        },
-        {
-            "name": "Netherlands",
-            "iso_code": "NL"
-        },
-        {
-            "name": "New Caledonia",
-            "iso_code": "NC"
-        },
-        {
-            "name": "New Zealand",
-            "iso_code": "NZ"
-        },
-        {
-            "name": "Nicaragua",
-            "iso_code": "NI"
-        },
-        {
-            "name": "Niger",
-            "iso_code": "NE"
-        },
-        {
-            "name": "Nigeria",
-            "iso_code": "NG"
-        },
-        {
-            "name": "Niue",
-            "iso_code": "NU"
-        },
-        {
-            "name": "Norfolk Island",
-            "iso_code": "NF"
-        },
-        {
-            "name": "North Korea",
-            "iso_code": "KP"
-        },
-        {
-            "name": "North Macedonia",
-            "iso_code": "MK"
-        },
-        {
-            "name": "Northern Mariana Islands",
-            "iso_code": "MP"
-        },
-        {
-            "name": "Norway",
-            "iso_code": "NO"
-        },
-        {
-            "name": "Oman",
-            "iso_code": "OM"
-        },
-        {
-            "name": "Pakistan",
-            "iso_code": "PK"
-        },
-        {
-            "name": "Palau",
-            "iso_code": "PW"
-        },
-        {
-            "name": "Palestinian Territories",
-            "iso_code": "PS"
-        },
-        {
-            "name": "Panama",
-            "iso_code": "PA"
-        },
-        {
-            "name": "Papua New Guinea",
-            "iso_code": "PG"
-        },
-        {
-            "name": "Paraguay",
-            "iso_code": "PY"
-        },
-        {
-            "name": "Peru",
-            "iso_code": "PE"
-        },
-        {
-            "name": "Philippines",
-            "iso_code": "PH"
-        },
-        {
-            "name": "Pitcairn Islands",
-            "iso_code": "PN"
-        },
-        {
-            "name": "Poland",
-            "iso_code": "PL"
-        },
-        {
-            "name": "Portugal",
-            "iso_code": "PT"
-        },
-        {
-            "name": "Pseudo-Accents",
-            "iso_code": "XA"
-        },
-        {
-            "name": "Pseudo-Bidi",
-            "iso_code": "XB"
-        },
-        {
-            "name": "Puerto Rico",
-            "iso_code": "PR"
-        },
-        {
-            "name": "Qatar",
-            "iso_code": "QA"
-        },
-        {
-            "name": "Réunion",
-            "iso_code": "RE"
-        },
-        {
-            "name": "Romania",
-            "iso_code": "RO"
-        },
-        {
-            "name": "Russia",
-            "iso_code": "RU"
-        },
-        {
-            "name": "Rwanda",
-            "iso_code": "RW"
-        },
-        {
-            "name": "Samoa",
-            "iso_code": "WS"
-        },
-        {
-            "name": "San Marino",
-            "iso_code": "SM"
-        },
-        {
-            "name": "São Tomé & Príncipe",
-            "iso_code": "ST"
-        },
-        {
-            "name": "Saudi Arabia",
-            "iso_code": "SA"
-        },
-        {
-            "name": "Senegal",
-            "iso_code": "SN"
-        },
-        {
-            "name": "Serbia",
-            "iso_code": "RS"
-        },
-        {
-            "name": "Seychelles",
-            "iso_code": "SC"
-        },
-        {
-            "name": "Sierra Leone",
-            "iso_code": "SL"
-        },
-        {
-            "name": "Singapore",
-            "iso_code": "SG"
-        },
-        {
-            "name": "Sint Maarten",
-            "iso_code": "SX"
-        },
-        {
-            "name": "Slovakia",
-            "iso_code": "SK"
-        },
-        {
-            "name": "Slovenia",
-            "iso_code": "SI"
-        },
-        {
-            "name": "Solomon Islands",
-            "iso_code": "SB"
-        },
-        {
-            "name": "Somalia",
-            "iso_code": "SO"
-        },
-        {
-            "name": "South Africa",
-            "iso_code": "ZA"
-        },
-        {
-            "name": "South Georgia & South Sandwich Islands",
-            "iso_code": "GS"
-        },
-        {
-            "name": "South Korea",
-            "iso_code": "KR"
-        },
-        {
-            "name": "South Sudan",
-            "iso_code": "SS"
-        },
-        {
-            "name": "Spain",
-            "iso_code": "ES"
-        },
-        {
-            "name": "Sri Lanka",
-            "iso_code": "LK"
-        },
-        {
-            "name": "St. Barthélemy",
-            "iso_code": "BL"
-        },
-        {
-            "name": "St. Helena",
-            "iso_code": "SH"
-        },
-        {
-            "name": "St. Kitts & Nevis",
-            "iso_code": "KN"
-        },
-        {
-            "name": "St. Lucia",
-            "iso_code": "LC"
-        },
-        {
-            "name": "St. Martin",
-            "iso_code": "MF"
-        },
-        {
-            "name": "St. Pierre & Miquelon",
-            "iso_code": "PM"
-        },
-        {
-            "name": "St. Vincent & Grenadines",
-            "iso_code": "VC"
-        },
-        {
-            "name": "Sudan",
-            "iso_code": "SD"
-        },
-        {
-            "name": "Suriname",
-            "iso_code": "SR"
-        },
-        {
-            "name": "Svalbard & Jan Mayen",
-            "iso_code": "SJ"
-        },
-        {
-            "name": "Sweden",
-            "iso_code": "SE"
-        },
-        {
-            "name": "Switzerland",
-            "iso_code": "CH"
-        },
-        {
-            "name": "Syria",
-            "iso_code": "SY"
-        },
-        {
-            "name": "Taiwan",
-            "iso_code": "TW"
-        },
-        {
-            "name": "Tajikistan",
-            "iso_code": "TJ"
-        },
-        {
-            "name": "Tanzania",
-            "iso_code": "TZ"
-        },
-        {
-            "name": "Thailand",
-            "iso_code": "TH"
-        },
-        {
-            "name": "Timor-Leste",
-            "iso_code": "TL"
-        },
-        {
-            "name": "Togo",
-            "iso_code": "TG"
-        },
-        {
-            "name": "Tokelau",
-            "iso_code": "TK"
-        },
-        {
-            "name": "Tonga",
-            "iso_code": "TO"
-        },
-        {
-            "name": "Trinidad & Tobago",
-            "iso_code": "TT"
-        },
-        {
-            "name": "Tristan da Cunha",
-            "iso_code": "TA"
-        },
-        {
-            "name": "Tunisia",
-            "iso_code": "TN"
-        },
-        {
-            "name": "Turkey",
-            "iso_code": "TR"
-        },
-        {
-            "name": "Turkmenistan",
-            "iso_code": "TM"
-        },
-        {
-            "name": "Turks & Caicos Islands",
-            "iso_code": "TC"
-        },
-        {
-            "name": "Tuvalu",
-            "iso_code": "TV"
-        },
-        {
-            "name": "U.S. Outlying Islands",
-            "iso_code": "UM"
-        },
-        {
-            "name": "U.S. Virgin Islands",
-            "iso_code": "VI"
-        },
-        {
-            "name": "Uganda",
-            "iso_code": "UG"
-        },
-        {
-            "name": "Ukraine",
-            "iso_code": "UA"
-        },
-        {
-            "name": "United Arab Emirates",
-            "iso_code": "AE"
-        },
-        {
-            "name": "United Kingdom",
-            "iso_code": "GB"
-        },
-        {
-            "name": "United States",
-            "iso_code": "US"
-        },
-        {
-            "name": "Uruguay",
-            "iso_code": "UY"
-        },
-        {
-            "name": "Uzbekistan",
-            "iso_code": "UZ"
-        },
-        {
-            "name": "Vanuatu",
-            "iso_code": "VU"
-        },
-        {
-            "name": "Vatican City",
-            "iso_code": "VA"
-        },
-        {
-            "name": "Venezuela",
-            "iso_code": "VE"
-        },
-        {
-            "name": "Vietnam",
-            "iso_code": "VN"
-        },
-        {
-            "name": "Wallis & Futuna",
-            "iso_code": "WF"
-        },
-        {
-            "name": "Western Sahara",
-            "iso_code": "EH"
-        },
-        {
-            "name": "Yemen",
-            "iso_code": "YE"
-        },
-        {
-            "name": "Zambia",
-            "iso_code": "ZM"
-        },
-        {
-            "name": "Zimbabwe",
-            "iso_code": "ZW"
-        }
-    ]
-```
+<table>
+<thead>
+ <tr>
+<td>Name</td>
+<td>iso_code</td>
+</tr>
+</thead>
+
+<tr>
+<td>Afghanistan</td>
+<td>AF</td>
+</tr>
+
+<tr>
+<td>Aland Islands</td>
+<td>AX</td>
+</tr>
+
+<tr>
+<td>Albania</td>
+<td>AL</td>
+</tr>
+
+<tr>
+<td>Algeria</td>
+<td>DZ</td>
+</tr>
+
+<tr>
+<td>American Samoa</td>
+<td>AS</td>
+</tr>
+
+<tr>
+<td>Andorra</td>
+<td>AD</td>
+</tr>
+
+<tr>
+<td>Angola</td>
+<td>AO</td>
+</tr>
+
+<tr>
+<td>Anguilla</td>
+<td>AI</td>
+</tr>
+
+<tr>
+<td>Antarctica</td>
+<td>AQ</td>
+</tr>
+
+<tr>
+<td>Antigua & Barbuda</td>
+<td>AG</td>
+</tr>
+
+<tr>
+<td>Argentina</td>
+<td>AR</td>
+</tr>
+
+<tr>
+<td>Armenia</td>
+<td>AM</td>
+</tr>
+
+<tr>
+<td>Aruba</td>
+<td>AW</td>
+</tr>
+
+<tr>
+<td>Ascension Island</td>
+<td>AC</td>
+</tr>
+
+<tr>
+<td>Australia</td>
+<td>AU</td>
+</tr>
+
+<tr>
+<td>Austria</td>
+<td>At</td>
+</tr>
+
+<tr>
+<td>Azerbaijan</td>
+<td>AZ</td>
+</tr>
+
+<tr>
+<td>Bahamas</td>
+<td>BS</td>
+</tr>
+
+<tr>
+<td>Bahrain</td>
+<td>BH</td>
+</tr>
+
+<tr>
+<td>Bangladesh BD</td>
+<td>BD</td>
+</tr>
+
+<tr>
+<td>Barbados</td>
+<td>BB</td>
+</tr>
+
+<tr>
+<td>Belarus</td>
+<td>BY</td>
+</tr>
+
+<tr>
+<td>Belgium</td>
+<td>BE</td>
+</tr>
+
+<tr>
+<td>Belize</td>
+<td>BZ</td>
+</tr>
+
+<tr>
+<td>Benin</td>
+<td>BJ</td>
+</tr>
+
+<tr>
+<td>Bermuda</td>
+<td>BM</td>
+</tr>
+
+<tr>
+<td>Bhutan</td>
+<td>BT</td>
+</tr>
+
+<tr>
+<td>Bolivia</td>
+<td>BO</td>
+</tr>
+
+<tr>
+<td>Bosnia & Herzegovina</td>
+<td>BA</td>
+</tr>
+
+<tr>
+<td>Botswana</td>
+<td>BW</td>
+</tr>
+
+<tr>
+<td>Brazil</td>
+<td>BR</td>
+</tr>
+
+<tr>
+<td>British Indian Ocean Territory</td>
+<td>IO</td>
+</tr>
+
+<tr>
+<td>British virgin Islands</td>
+<td>VG</td>
+</tr>
+
+<tr>
+<td>Brunei</td>
+<td>BN</td>
+</tr>
+
+<tr>
+<td>Bulgaria</td>
+<td>BG</td>
+</tr>
+
+<tr>
+<td>Burkina Faso</td>
+<td>BF</td>
+</tr>
+
+<tr>
+<td>Burundi</td>
+<td>BI</td>
+</tr>
+
+<tr>
+<td>Cambodia</td>
+<td>KH</td>
+</tr>
+
+<tr>
+<td>Cameroon</td>
+<td>CM</td>
+</tr>
+            
+<tr>
+<td>Canada</td>
+<td>CA</td>
+</tr>
+
+<tr>
+<td>Canary Islands</td>
+<td>IC</td>
+</tr>
+
+<tr>
+<td>Cape Verde</td>
+<td>CV</td>
+</tr>
+
+<tr>
+<td>Caribbean Netherlands</td>
+<td>BQ</td>
+</tr>
+
+<tr>
+<td>Cayman Islands</td>
+<td>KY</td>
+</tr>
+            
+<tr>
+<td>Central African Republic</td>
+<td>CF</td>
+</tr>
+
+<tr>
+<td>Ceuta & Melilla</td>
+<td>EA</td>
+</tr>
+
+<tr>
+<td>Chad</td>
+<td>TD</td>
+</tr>
+
+<tr>
+<td>Chile</td>
+<td>CL</td>
+</tr>
+
+<tr>
+<td>China</td>
+<td>CN</td>
+</tr>
+
+<tr>
+<td>Christmas Island</td>
+<td>CX</td>
+</tr>
+
+<tr>
+<td>Cocos (Keeling) Islands</td>
+<td>CC</td>
+</tr>
+
+<tr>
+<td>Colombia</td>
+<td>CO</td>
+</tr>
+
+<tr>
+<td>Comoros</td>
+<td>KM</td>
+</tr>
+
+<tr>
+<td>Congo - Kinshasa</td>
+<td>CD</td>
+</tr>
+
+<tr>
+<td>Cook Islands</td>
+<td>CK</td>
+</tr>
+
+<tr>
+<td>Costa Rica</td>
+<td>CR</td>
+</tr>
+
+<tr>
+<td>Côte D'ivoire</td>
+<td>CI</td>
+</tr>
+
+<tr>
+<td>Croatia</td>
+<td>HR</td>
+</tr>
+
+<tr>
+<td>Cuba</td>
+<td>CU</td>
+</tr>
+
+<tr>
+<td>Curaçao</td>
+<td>CW</td>
+</tr>
+
+<tr>
+<td>Cyprus</td>
+<td>CY</td>
+</tr>
+
+<tr>
+<td>Czechia</td>
+<td>CZ</td>
+</tr>
+
+<tr>
+<td>Denmark</td>
+<td>DK</td>
+</tr>
+
+<tr>
+<td>Diego Garcia</td>
+<td>DG</td>
+</tr>
+
+<tr>
+<td>Djibouti</td>
+<td>DJ</td>
+</tr>
+
+<tr>
+<td>Dominica</td>
+<td>DM</td>
+</tr>
+
+<tr>
+<td>Dominican Republic</td>
+<td>DO</td>
+</tr>
+
+<tr>
+<td>Ecuador</td>
+<td>EC</td>
+</tr>
+
+<tr>
+<td>Egypt</td>
+<td>EG</td>
+</tr>
+
+<tr>
+<td>El Salvador</td>
+<td>SV</td>
+</tr>
+
+<tr>
+<td>Equatorial Guinea</td>
+<td>GQ</td>
+</tr>
+
+<tr>
+<td>Eritrea</td>
+<td>ER</td>
+</tr>
+
+<tr>
+<td>Estonia</td>
+<td>EE</td>
+</tr>
+
+<tr>
+<td>Eswatini</td>
+<td>SZ</td>
+</tr>
+
+<tr>
+<td>Ethiopia</td>
+<td>ET</td>
+</tr>
+
+<tr>
+<td>Falkand Islands</td>
+<td>FK</td>
+</tr>
+
+<tr>
+<td>Faroe Islands</td>
+<td>FO</td>
+</tr>
+
+<tr>
+<td>Fiji</td>
+<td>FJ</td>
+</tr>
+
+<tr>
+<td>Finland</td>
+<td>FI</td>
+</tr>
+
+<tr>
+<td>France</td>
+<td>FR</td>
+</tr>
+
+<tr>
+<td>French Guiana</td>
+<td>GF</td>
+</tr>
+
+<tr>
+<td>French Polynesia</td>
+<td>PF</td>
+</tr>
+
+<tr>
+<td>French Southern Territories</td>
+<td>TF</td>
+</tr>
+
+<tr>
+<td>Gabon</td>
+<td>GA</td>
+</tr>
+
+<tr>
+<td>Gambia</td>
+<td>GM</td>
+</tr>
+
+<tr>
+<td>Georgia</td>
+<td>GE</td>
+</tr>
+
+<tr>
+<td>Germany</td>
+<td>DE</td>
+</tr>
+
+<tr>
+<td>Ghana</td>
+<td>GH</td>
+</tr>
+
+<tr>
+<td>Gibraltar</td>
+<td>GI</td>
+</tr>
+
+<tr>
+<td>Greece</td>
+<td>GR</td>
+</tr>
+
+<tr>
+<td>Greenland</td>
+<td>GL</td>
+</tr>
+
+<tr>
+<td>Grenada</td>
+<td>GD</td>
+</tr>
+
+<tr>
+<td>Guadeloupe</td>
+<td>GP</td>
+</tr>
+
+<tr>
+<td>Guam</td>
+<td>GU</td>
+</tr>
+
+<tr>
+<td>Guatemala</td>
+<td>GT</td>
+</tr>
+
+<tr>
+<td>Guernsey</td>
+<td>GG</td>
+</tr>
+
+<tr>
+<td>Guinea</td>
+<td>GN</td>
+</tr>
+
+<tr>
+<td>Guinea-Bissau</td>
+<td>GW</td>
+</tr>
+
+<tr>
+<td>Guyana</td>
+<td>GY</td>
+</tr>
+
+<tr>
+<td>Haiti</td>
+<td>HT</td>
+</tr>
+
+<tr>
+<td>Honduras</td>
+<td>HN</td>
+</tr>
+
+<tr>
+<td>Hog kong Sar China</td>
+<td>HK</td>
+</tr>
+
+<tr>
+<td>Hungary</td>
+<td>HU</td>
+</tr>
+
+<tr>
+<td>Iceland</td>
+<td>IS</td>
+</tr>
+
+<tr>
+<td>India</td>
+<td>IN</td>
+</tr>
+
+<tr>
+<td>Indonesia</td>
+<td>ID</td>
+</tr>
+
+<tr>
+<td>Iran</td>
+<td>IR</td>
+</tr>
+
+<tr>
+<td>Iraq</td>
+<td>IQ</td>
+</tr>
+
+<tr>
+<td>Ireland</td>
+<td>IE</td>
+</tr>
+
+<tr>
+<td>Isle Of Man</td>
+<td>IM</td>
+</tr>
+
+<tr>
+<td>Israel</td>
+<td>IL</td>
+</tr>
+
+<tr>
+<td>Italy</td>
+<td>IT</td>
+</tr>
+
+<tr>
+<td>Jamaica</td>
+<td>JM</td>
+</tr>
+
+<tr>
+<td>Japan</td>
+<td>JP</td>
+</tr>
+
+<tr>
+<td>Jersey</td>
+<td>JE</td>
+</tr>
+
+<tr>
+<td>Jordan</td>
+<td>JO</td>
+</tr>
+
+<tr>
+<td>Kazakhstan</td>
+<td>KZ</td>
+</tr>
+
+<tr>
+<td>Kenya</td>
+<td>KE</td>
+</tr>
+
+<tr>
+<td>Kiribati</td>
+<td>KI</td>
+</tr>
+
+<tr>
+<td>Kosovo</td>
+<td>XK</td>
+</tr>
+
+<tr>
+<td>Kuwait</td>
+<td>KW</td>
+</tr>
+
+<tr>
+<td>Kyrgyzstan</td>
+<td>KG</td>
+</tr>
+
+<tr>
+<td>Laos</td>
+<td>LA</td>
+</tr>
+
+<tr>
+<td>Latvia</td>
+<td>LV</td>
+</tr>
+
+<tr>
+<td>Lebanon</td>
+<td>LB</td>
+</tr>
+
+<tr>
+<td>Lesotho</td>
+<td>LS</td>
+</tr>
+
+<tr>
+<td>Liberia</td>
+<td>LR</td>
+</tr>
+
+<tr>
+<td>Libya</td>
+<td>LY</td>
+</tr>
+
+<tr>
+<td>Liechtenstein</td>
+<td>LI</td>
+</tr>
+
+<tr>
+<td>Lithuania</td>
+<td>LT</td>
+</tr>
+
+<tr>
+<td>Luxembourg</td>
+<td>LU</td>
+</tr>
+
+<tr>
+<td>Macao Sar China</td>
+<td>MO</td>
+</tr>
+
+<tr>
+<td>Madagascar</td>
+<td>MG</td>
+</tr>
+
+<tr>
+<td>Malawi</td>
+<td>MW</td>
+</tr>
+
+<tr>
+<td>Malaysia</td>
+<td>MY</td>
+</tr>
+
+<tr>
+<td>Maldives</td>
+<td>MV</td>
+</tr>
+
+<tr>
+<td>Mali</td>
+<td>ML</td>
+</tr>
+
+<tr>
+<td>Malta</td>
+<td>MT</td>
+</tr>
+                                        
+<tr>
+<td>Marshall Islands</td>
+<td>MH</td>
+</tr>
+
+<tr>
+<td>Martinique</td>
+<td>MQ</td>
+</tr>
+
+<tr>
+<td>Mauritania</td>
+<td>MR</td>
+</tr>
+
+<tr>
+<td>Mauritius</td>
+<td>MU</td>
+</tr>
+
+<tr>
+<td>Mayotte</td>
+<td>YT</td>
+</tr>
+
+<tr>
+<td>Mexico</td>
+<td>MX</td>
+</tr>
+
+<tr>
+<td>Micronesia</td>
+<td>FM</td>
+</tr>
+
+<tr>
+<td>Moldova</td>
+<td>MD</td>
+</tr>
+
+<tr>
+<td>Monaco</td>
+<td>MC</td>
+</tr>
+
+<tr>
+<td>Mongolia</td>
+<td>MN</td>
+</tr>
+
+<tr>
+<td>Montenegro</td>
+<td>ME</td>
+</tr>
+
+<tr>
+<td>Montserrat</td>
+<td>MS</td>
+</tr>
+
+<tr>
+<td>Morocco</td>
+<td>MA</td>
+</tr>
+
+<tr>
+<td>Mozambique</td>
+<td>MZ</td>
+</tr>
+
+<tr>
+<td>Myanmar (Burma)</td>
+<td>MM</td>
+</tr>
+
+<tr>
+<td>Namibia</td>
+<td>NA</td>
+</tr>
+
+<tr>
+<td>Nauru</td>
+<td>NR</td>
+</tr>
+
+<tr>
+<td>Nepal</td>
+<td>NP</td>
+</tr>
+
+<tr>
+<td>Netherlands</td>
+<td>NL</td>
+</tr>
+
+<tr>
+<td>New Caledonia</td>
+<td>NC</td>
+</tr>
+
+<tr>
+<td>New Zealand</td>
+<td>NZ</td>
+</tr>
+
+<tr>
+<td>Nicaragua</td>
+<td>NI</td>
+</tr>
+
+<tr>
+<td>Niger</td>
+<td>NE</td>
+</tr>
+                                        
+<tr>
+<td>Nigeria</td>
+<td>NG</td>
+</tr>
+
+<tr>
+<td>Niue</td>
+<td>NU</td>
+</tr>
+
+<tr>
+<td>Norfolk Island</td>
+<td>NF</td>
+</tr>
+
+<tr>
+<td>North Korea</td>
+<td>KP</td>
+</tr>
+
+<tr>
+<td>North Macedonia</td>
+<td>MK</td>
+</tr>
+
+<tr>
+<td>North Mariana Islands</td>
+<td>MP</td>
+</tr>
+
+<tr>
+<td>Norway</td>
+<td>NO</td>
+</tr>
+
+<tr>
+<td>Oman</td>
+<td>OM</td>
+</tr>
+
+<tr>
+<td>Pakistan</td>
+<td>PK</td>
+</tr>
+
+<tr>
+<td>Palau</td>
+<td>PW</td>
+</tr>
+
+<tr>
+<td>Palestinian Territories</td>
+<td>PS</td>
+</tr>
+
+<tr>
+<td>Panama</td>
+<td>PA</td>
+</tr>
+
+<tr>
+<td>Papua New Guinea</td>
+<td>PG</td>
+</tr>
+
+<tr>
+<td>Paraguay</td>
+<td>PY</td>
+</tr>
+
+<tr>
+<td>Peru</td>
+<td>PE</td>
+</tr>
+
+<tr>
+<td>Philippines</td>
+<td>PH</td>
+</tr>
+
+<tr>
+<td>Pitcairn Islands</td>
+<td>PN</td>
+</tr>
+
+<tr>
+<td>Poland</td>
+<td>PL</td>
+</tr>
+
+<tr>
+<td>Portugal</td>
+<td>PT</td>
+</tr>
+
+<tr>
+<td>Pseudo-Accents</td>
+<td>XA</td>
+</tr>
+
+<tr>
+<td>Pseudo-Bidi</td>
+<td>XB</td>
+</tr>
+
+<tr>
+<td>Puerto Rico</td>
+<td>PR</td>
+</tr>
+
+<tr>
+<td>Qatar</td>
+<td>QA</td>
+</tr>
+
+<tr>
+<td>Réunion</td>
+<td>RE</td>
+</tr>
+
+<tr>
+<td>Romania</td>
+<td>RO</td>
+</tr>
+
+<tr>
+<td>Russia</td>
+<td>RU</td>
+</tr>
+
+<tr>
+<td>Rwanda</td>
+<td>RW</td>
+</tr>
+
+<tr>
+<td>Samoa</td>
+<td>WS</td>
+</tr>
+
+<tr>
+<td>San Marino</td>
+<td>SM</td>
+</tr>
+
+<tr>
+<td>São Tomé & Príncipe</td>
+<td>ST</td>
+</tr>
+
+<tr>
+<td>Saudi Arabia</td>
+<td>SA</td>
+</tr>
+
+<tr>
+<td>Senegal</td>
+<td>SN</td>
+</tr>
+
+<tr>
+<td>Serbia</td>
+<td>RS</td>
+</tr>
+
+<tr>
+<td>seychelles</td>
+<td>SC</td>
+</tr>
+
+<tr>
+<td>Sierra Leone</td>
+<td>SL</td>
+</tr>
+
+<tr>
+<td>Singapore</td>
+<td>SG</td>
+</tr>
+
+<tr>
+<td>Sint Maarten</td>
+<td>SX</td>
+</tr>
+
+<tr>
+<td>Slovakia</td>
+<td>SK</td>
+</tr>
+
+<tr>
+<td>Slovenia</td>
+<td>SI</td>
+</tr>
+
+<tr>
+<td>Solomon Islands</td>
+<td>SB</td>
+</tr>
+
+<tr>
+<td>Somalia</td>
+<td>SO</td>
+</tr>
+
+<tr>
+<td>South Africa</td>
+<td>ZA</td>
+</tr>
+
+<tr>
+<td>South Georgia & South Sandwich Islands</td>
+<td>GS</td>
+</tr>
+
+<tr>
+<td>South Korea</td>
+<td>KR</td>
+</tr>
+
+<tr>
+<td>South Sudan</td>
+<td>SS</td>
+</tr>
+
+<tr>
+<td>Spain</td>
+<td>ES</td>
+</tr>
+
+<tr>
+<td>Sri Lanka</td>
+<td>LK</td>
+</tr>
+
+<tr>
+<td>St. Barthélemy</td>
+<td>BL</td>
+</tr>
+
+<tr>
+<td>St. Helena</td>
+<td>SH</td>
+</tr>
+
+<tr>
+<td>St. Kitts & Nevis</td>
+<td>KN</td>
+</tr>
+
+<tr>
+<td>ST. Lucia</td>
+<td>LC</td>
+</tr>
+
+<tr>
+<td>ST. Martin</td>
+<td>MF</td>
+</tr>
+
+<tr>
+<td>St. Pierre & Miquelon</td>
+<td>PM</td>
+</tr>
+
+<tr>
+<td>St. Vincent & Grenadines</td>
+<td>VC</td>
+</tr>
+
+<tr>
+<td>Sudan</td>
+<td>SD</td>
+</tr>
+
+<tr>
+<td>Suriname</td>
+<td>SR</td>
+</tr>
+
+<tr>
+<td>Svalbard & Jan Mayen</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Sweden</td>
+<td>SE</td>
+</tr>
+
+<tr>
+<td>Switzerland</td>
+<td>CH</td>
+</tr>
+
+<tr>
+<td>Syria</td>
+<td>SY</td>
+</tr>
+
+<tr>
+<td>Taiwan</td>
+<td>TW</td>
+</tr>
+
+<tr>
+<td>Tajikistan</td>
+<td>TJ</td>
+</tr>
+
+<tr>
+<td>Tanzania</td>
+<td>TZ</td>
+</tr>
+
+<tr>
+<td>Thailand</td>
+<td>TH</td>
+</tr>
+
+<tr>
+<td>Timor-Leste</td>
+<td>TL</td>
+</tr>
+
+<tr>
+<td>Togo</td>
+<td>TG</td>
+</tr>
+
+<tr>
+<td>Tokelau</td>
+<td>TK</td>
+</tr>
+
+<tr>
+<td>Tonga</td>
+<td>TO</td>
+</tr>
+
+<tr>
+<td>Trinidad & Tobago</td>
+<td>TT</td>
+</tr>
+
+<tr>
+<td>Tristan da Cunha</td>
+<td>TA</td>
+</tr>
+
+<tr>
+<td>Tunisia</td>
+<td>TN</td>
+</tr>
+
+<tr>
+<td>Turkey</td>
+<td>TR</td>
+</tr>
+
+<tr>
+<td>Turkmenistan</td>
+<td>TM</td>
+</tr>
+
+<tr>
+<td>Turks & Caicos Islands</td>
+<td>TC</td>
+</tr>
+
+<tr>
+<td>Tuvalu</td>
+<td>TV</td>
+</tr>
+
+<tr>
+<td>US Outliying Islands>
+<td>UM</td>
+</tr>
+
+<tr>
+<td>US Virgin Islandstd>
+<td>VI</td>
+</tr>
+
+<tr>
+<td>Uganda</td>
+<td>UG</td>
+</tr>
+
+<tr>
+<td>Ukraine</td>
+<td>UA</td>
+</tr>
+
+<tr>
+<td>United Arab Emirates</td>
+<td>AE</td>
+</tr>
+
+<tr>
+<td>United Kingdom</td>
+<td>GB</td>
+</tr>
+
+<tr>
+<td>United States</td>
+<td>US</td>
+</tr>
+
+<tr>
+<td>Uruguay</td>
+<td>UY</td>
+</tr>
+
+<tr>
+<td>Uzbekistan</td>
+<td>UZ</td>
+</tr>
+
+<tr>
+<td>Vanuatu</td>
+<td>VU</td>
+</tr>
+
+<tr>
+<td>Vatican City</td>
+<td>VA</td>
+</tr>
+
+<tr>
+<td>Venezuela</td>
+<td>VE</td>
+</tr>
+
+<tr>
+<td>Vietnam</td>
+<td>VN</td>
+</tr>
+
+<tr>
+<td>Wallis & Futuna</td>
+<td>WF</td>
+</tr>
+
+<tr>
+<td>Western Sahara</td>
+<td>EH</td>
+</tr>
+
+<tr>
+<td>Yemen</td>
+<td>YE</td>
+</tr>
+
+<tr>
+<td>Zambia</td>
+<td>ZM</td>
+</tr>
+
+<tr>
+<td>Zimbabwe</td>
+<td>ZW</td>
+</tr>
+
+</table>
 
 ## Languages
 
 Available languages
 
-```json
-[
-        {
-            "name": "English",
-            "iso_code": "en"
-        },
-        {
-            "name": "French",
-            "iso_code": "fr"
-        }
-    ]
-```
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>code</th>
+</tr>
+</thead>
+<tr>
+<td>English</td>
+<td>en</td>
+</tr>
 
+<tr>
+<td>French</td>
+<td>fr</td>
+</tr>
+</table>

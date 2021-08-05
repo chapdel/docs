@@ -29,7 +29,7 @@ Accepted gateways
 </tr>
 
 <tr>
-<td>Mobile Money</td>
+<td>Mobile Money (MTN, Orange)</td>
 <td>mobile</td>
 </tr>
 <tr>

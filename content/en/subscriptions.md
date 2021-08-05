@@ -17,20 +17,20 @@ Subscriptions allow customers to pay for recurring interval. Init it and we will
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Business API Key](https://business.notchpay.xyz/settings/apis-webhooks)
+To get access of those endpoint, you need [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
 ## Create Plan
 
 The feature help you to decide the amount and interval in which the subscription will be paid. To make subscription payments you need a plan.
-You can graphically create plan vie the Business Dashboard. Visit [Plan](http://docs.notchpay.xyz/plans) for more information's about it.
+You can graphically create plan vie the Business Dashboard. Visit [Plan](https://docs.notchpay.co/plans) for more information's about it.
 
 <code-group>
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans
+curl https://api.notchpay.co/plans
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -d '{
@@ -124,11 +124,11 @@ Initialize recurring payment
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/subscriptions/initialize
+curl https://api.notchpay.co/subscriptions/initialize
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -d '{
-    "email": "hello@chapdel.xyz",
+    "email": "hello@chapdel.co",
     "name": "Chapdel KAMGA",
     "plan_id":"npln_LPAWwSrCo"
 }'
@@ -154,7 +154,7 @@ curl http://api.notchpay.xyz/subscriptions/initialize
           "name": "Algeria",
           "iso_code": "DZ"
         },
-        "email": "innaya@notchpay.xyz",
+        "email": "innaya@notchpay.co",
         "phone": "+237662611051",
         "name": "Innaya Belvidel",
         "avatar": null,
@@ -169,7 +169,7 @@ curl http://api.notchpay.xyz/subscriptions/initialize
     },
     "customer": {
       "name": null,
-      "email": "me@chapdel.xyz",
+      "email": "me@chapdel.co",
       "phone": null,
       "cid": "ncus_yluQVtDOWuhG"
     },
@@ -177,7 +177,7 @@ curl http://api.notchpay.xyz/subscriptions/initialize
     "start_at": null,
     "expires_at": null
   },
-  "authorization_url": "http://pay.notchpay.xyz/subscribe?token=nsub_EURSya75KjyF"
+  "authorization_url": "https://pay.notchpay.co/subscribe?token=nsub_EURSya75KjyF"
 }
 ```
 
@@ -191,7 +191,7 @@ Notch Pay allow you to check status of subscription.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/subscriptions/SUBSCRIPTION_TOKEN/check
+curl https://api.notchpay.co/subscriptions/SUBSCRIPTION_TOKEN/check
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -X GET
@@ -232,7 +232,7 @@ curl http://api.notchpay.xyz/subscriptions/SUBSCRIPTION_TOKEN/check
   },
   "customer": {
     "name": null,
-    "email": "me@chapdel.xyz",
+    "email": "me@chapdel.co",
     "phone": null,
     "cid": "ncus_yluQVtDOWuhG"
   },

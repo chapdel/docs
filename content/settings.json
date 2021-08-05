@@ -1,10 +1,10 @@
 {
-  "title": "Notch Pay Documentation",
-  "url": "https://docs.notchpay.xyz",
+  "title": "Notch Pay Developer's guide",
+  "url": "https://docs.notchpay.co",
   "logo": {
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
   },
-  "github": "notchpay/docs",
+  "github": "notchpay",
   "twitter": "@notch_pay"
 }

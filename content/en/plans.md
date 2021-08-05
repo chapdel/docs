@@ -11,7 +11,7 @@ endpoints:
   - Destroy Plan
 ---
 
-The Plans API allows you to create payment options to initiate [Subscriptions](http://docs.notchpay.xyz/subscriptions)
+The Plans API allows you to create payment options to initiate [Subscriptions](https://docs.notchpay.co/subscriptions)
 
 # Endpoints
 
@@ -19,7 +19,7 @@ The Plans API allows you to create payment options to initiate [Subscriptions](h
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Business API Key](https://business.notchpay.xyz/settings/apis-webhooks)
+To get access of those endpoint, you need [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
@@ -28,7 +28,6 @@ To get access of those endpoint, you need [Business API Key](https://business.no
 Creating a plan with our API
 
 #### Headers
-
 
 <table>
 <thead>
@@ -56,7 +55,6 @@ Creating a plan with our API
 </table>
 
 #### Body
-
 
 <table>
 <thead>
@@ -91,7 +89,7 @@ Creating a plan with our API
 <td>currency</td>
 <td>String</td>
 <td>Yes</td>
-<td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (http://docs.notchpay.xyz/resources#currencies) </td>
+<td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (https://docs.notchpay.co/resources#currencies) </td>
 </tr>
 <tr>
 <td>trial_interval</td>
@@ -111,11 +109,12 @@ Creating a plan with our API
 </table>
 
 #### Example
+
 <code-group>
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans
+curl https://api.notchpay.co/plans
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -d '{
@@ -136,25 +135,25 @@ curl http://api.notchpay.xyz/plans
 
 ```json
 {
-    "name": "Monthly Subscription",
-    "plan_id": "npln_D4zGvEKpJ",
-    "business": {
-        "country": {
-            "name": "Algeria",
-            "iso_code": "DZ"
-        },
-        "email": "innaya@notchpay.xyz",
-        "phone": "+237662611051",
-        "avatar": null,
-        "name": "Woopi Workspace"
+  "name": "Monthly Subscription",
+  "plan_id": "npln_D4zGvEKpJ",
+  "business": {
+    "country": {
+      "name": "Algeria",
+      "iso_code": "DZ"
     },
-    "trial_interval": null,
-    "trial_period": null,
-    "subscribers": 0,
-    "price": 500,
-    "price_formated": "₦500.00",
-    "interval": "monthly",
-    "created_at": "2021-07-15T15:25:40.000000Z"
+    "email": "innaya@notchpay.co",
+    "phone": "+237662611051",
+    "avatar": null,
+    "name": "Woopi Workspace"
+  },
+  "trial_interval": null,
+  "trial_period": null,
+  "subscribers": 0,
+  "price": 500,
+  "price_formated": "₦500.00",
+  "interval": "monthly",
+  "created_at": "2021-07-15T15:25:40.000000Z"
 }
 ```
 
@@ -195,7 +194,7 @@ List plans available on your business account.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans
+curl https://api.notchpay.co/plans
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -X GET
@@ -209,70 +208,69 @@ curl http://api.notchpay.xyz/plans
 
 ```json
 [
-    {
-        "name": "Plan test",
-        "plan_id": "npln_LPAWwSrCo",
-        "business": {
-            "country": {
-                "name": "Algeria",
-                "iso_code": "DZ"
-            },
-            "email": "innaya@notchpay.xyz",
-            "phone": "+237662611051",
-            "avatar": null,
-            "name": "Woopi Workspace"
-        },
-        "trial_interval": null,
-        "trial_period": null,
-        "subscribers": 10,
-        "price": 1.216643045177,
-        "price_formated": "$1.22",
-        "interval": "monthly",
-        "created_at": "2021-07-13T03:34:41.000000Z"
+  {
+    "name": "Plan test",
+    "plan_id": "npln_LPAWwSrCo",
+    "business": {
+      "country": {
+        "name": "Algeria",
+        "iso_code": "DZ"
+      },
+      "email": "innaya@notchpay.co",
+      "phone": "+237662611051",
+      "avatar": null,
+      "name": "Woopi Workspace"
     },
-    {
-        "name": "Plan test",
-        "plan_id": "npln_fcSxI0s30",
-        "business": {
-            "country": {
-                "name": "Algeria",
-                "iso_code": "DZ"
-            },
-            "email": "innaya@notchpay.xyz",
-            "phone": "+237662611051",
-            "avatar": null,
-            "name": "Woopi Workspace"
-        },
-        "trial_interval": null,
-        "trial_period": null,
-        "subscribers": 0,
-        "price": 1.216643045177,
-        "price_formated": "$1.22",
-        "interval": "monthly",
-        "created_at": "2021-07-13T11:04:24.000000Z"
+    "trial_interval": null,
+    "trial_period": null,
+    "subscribers": 10,
+    "price": 1.216643045177,
+    "price_formated": "$1.22",
+    "interval": "monthly",
+    "created_at": "2021-07-13T03:34:41.000000Z"
+  },
+  {
+    "name": "Plan test",
+    "plan_id": "npln_fcSxI0s30",
+    "business": {
+      "country": {
+        "name": "Algeria",
+        "iso_code": "DZ"
+      },
+      "email": "innaya@notchpay.co",
+      "phone": "+237662611051",
+      "avatar": null,
+      "name": "Woopi Workspace"
     },
-    ...
-    {
-        "name": "Monthly Subscription",
-        "plan_id": "npln_D4zGvEKpJ",
-        "business": {
-            "country": {
-                "name": "Algeria",
-                "iso_code": "DZ"
-            },
-            "email": "innaya@notchpay.xyz",
-            "phone": "+237662611051",
-            "avatar": null,
-            "name": "Woopi Workspace"
-        },
-        "trial_interval": null,
-        "trial_period": null,
-        "subscribers": 0,
-        "price": 1.216643045177,
-        "price_formated": "$1.22",
-        "interval": "monthly",
-        "created_at": "2021-07-15T15:25:40.000000Z"
-    }
+    "trial_interval": null,
+    "trial_period": null,
+    "subscribers": 0,
+    "price": 1.216643045177,
+    "price_formated": "$1.22",
+    "interval": "monthly",
+    "created_at": "2021-07-13T11:04:24.000000Z"
+  },
+  ...{
+    "name": "Monthly Subscription",
+    "plan_id": "npln_D4zGvEKpJ",
+    "business": {
+      "country": {
+        "name": "Algeria",
+        "iso_code": "DZ"
+      },
+      "email": "innaya@notchpay.co",
+      "phone": "+237662611051",
+      "avatar": null,
+      "name": "Woopi Workspace"
+    },
+    "trial_interval": null,
+    "trial_period": null,
+    "subscribers": 0,
+    "price": 1.216643045177,
+    "price_formated": "$1.22",
+    "interval": "monthly",
+    "created_at": "2021-07-15T15:25:40.000000Z"
+  }
 ]
 ```
 
@@ -334,7 +332,7 @@ Fetch plan on your business account.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans/[plan_id]
+curl https://api.notchpay.co/plans/[plan_id]
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -X GET
@@ -348,25 +346,25 @@ curl http://api.notchpay.xyz/plans/[plan_id]
 
 ```json
 {
-    "name": "Monthly Subscription",
-    "plan_id": "npln_D4zGvEKpJ",
-    "business": {
-        "country": {
-            "name": "Algeria",
-            "iso_code": "DZ"
-        },
-        "email": "innaya@notchpay.xyz",
-        "phone": "+237662611051",
-        "avatar": null,
-        "name": "Woopi Workspace"
+  "name": "Monthly Subscription",
+  "plan_id": "npln_D4zGvEKpJ",
+  "business": {
+    "country": {
+      "name": "Algeria",
+      "iso_code": "DZ"
     },
-    "trial_interval": null,
-    "trial_period": null,
-    "subscribers": 0,
-    "price": 1.216643045177,
-    "price_formated": "$1.22",
-    "interval": "monthly",
-    "created_at": "2021-07-15T15:25:40.000000Z"
+    "email": "innaya@notchpay.co",
+    "phone": "+237662611051",
+    "avatar": null,
+    "name": "Woopi Workspace"
+  },
+  "trial_interval": null,
+  "trial_period": null,
+  "subscribers": 0,
+  "price": 1.216643045177,
+  "price_formated": "$1.22",
+  "interval": "monthly",
+  "created_at": "2021-07-15T15:25:40.000000Z"
 }
 ```
 
@@ -424,7 +422,6 @@ Updating a plan with our API
 
 #### Body
 
-
 <table>
 <thead>
 <tr>
@@ -458,7 +455,7 @@ Updating a plan with our API
 <td>currency</td>
 <td>String</td>
 <td>Yes if price</td>
-<td>`xaf`, `usd`, `ngn`. Get all available [Currencies](http://docs.notchpay.xyz/ressources#currencies) </td>
+<td>`xaf`, `usd`, `ngn`. Get all available [Currencies](https://docs.notchpay.co/ressources#currencies) </td>
 </tr>
 <tr>
 <td>trial_interval</td>
@@ -478,11 +475,12 @@ Updating a plan with our API
 </table>
 
 #### Example
+
 <code-group>
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans/[plan_id]
+curl https://api.notchpay.co/plans/[plan_id]
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -d '{
@@ -502,25 +500,25 @@ curl http://api.notchpay.xyz/plans/[plan_id]
 
 ```json
 {
-    "name": "Monthly Subscription Updated",
-    "plan_id": "npln_D4zGvEKpJ",
-    "business": {
-        "country": {
-            "name": "Algeria",
-            "iso_code": "DZ"
-        },
-        "email": "innaya@notchpay.xyz",
-        "phone": "+237662611051",
-        "avatar": null,
-        "name": "Woopi Workspace"
+  "name": "Monthly Subscription Updated",
+  "plan_id": "npln_D4zGvEKpJ",
+  "business": {
+    "country": {
+      "name": "Algeria",
+      "iso_code": "DZ"
     },
-    "trial_interval": null,
-    "trial_period": null,
-    "subscribers": 0,
-    "price": 500.0000000000199,
-    "price_formated": "₦500.00",
-    "interval": "monthly",
-    "created_at": "2021-07-15T15:25:40.000000Z"
+    "email": "innaya@notchpay.co",
+    "phone": "+237662611051",
+    "avatar": null,
+    "name": "Woopi Workspace"
+  },
+  "trial_interval": null,
+  "trial_period": null,
+  "subscribers": 0,
+  "price": 500.0000000000199,
+  "price_formated": "₦500.00",
+  "interval": "monthly",
+  "created_at": "2021-07-15T15:25:40.000000Z"
 }
 ```
 
@@ -582,7 +580,7 @@ Deleting plan on your business account.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/plans/[plan_id]
+curl https://api.notchpay.co/plans/[plan_id]
 -H "N-Authorization: BUSINESS_KEY"
 -H "Accept: application/json"
 -X DELETE
@@ -596,7 +594,7 @@ curl http://api.notchpay.xyz/plans/[plan_id]
 
 ```json
 {
-    "status": 201,
-    "message": "Resource deleted"
+  "status": 201,
+  "message": "Resource deleted"
 }
 ```

@@ -17,7 +17,7 @@ Notch Pay usage for Financial services.
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Exchange API Key](https://exchanges.notchpay.xyz/settings/api)
+To get access of those endpoint, you need [Exchange API Key](https://exchanges.notchpay.co/settings/api)
 
 </alert>
 
@@ -29,7 +29,7 @@ Get currencies available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/exchanges/currencies
+curl https://api.notchpay.co/exchanges/currencies
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -71,7 +71,7 @@ Get the latest exchange rates available on Notch Pay.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/exchanges/rates
+curl https://api.notchpay.co/exchanges/rates
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -123,7 +123,7 @@ Convert any money value from one currency to another at the latest API rates.
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/exchanges/convert?from=USD&to=XAF&value=500
+curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -162,7 +162,7 @@ Result format
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/exchanges/convert?from=USD&to=XAF&value=500&format=false
+curl https://api.notchpay.co/exchanges/convert?from=USD&to=XAF&value=500&format=false
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -201,7 +201,7 @@ Result format
   <code-block label="cURL" active>
 
 ```cURL
-curl http://api.notchpay.xyz/exchanges/convert?from=USD&country=cm&value=500
+curl https://api.notchpay.co/exchanges/convert?from=USD&country=cm&value=500
 -H "X-Exchange-Key: YOUR_EXCHANGE_KEY"
 -H "Content-Type: application/json"
 -X GET

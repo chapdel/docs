@@ -22,6 +22,10 @@ These libraries are managed our team
 
 [@notchpay/payment](https://github.com/notchpay/payment-nodejs)
 
+### PHP
+
+[notchpay-php](https://github.com/notchpay/notchpay-php)
+
 ## Community maintained
 
 Waiting for submission

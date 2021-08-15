@@ -5,6 +5,7 @@ position: 1
 category: ""
 guides:
   - Exchange Rates
+  - Checkout
   - Plans
   - Subscriptions
 resources:

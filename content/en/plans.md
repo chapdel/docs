@@ -130,7 +130,6 @@ curl https://api.notchpay.co/plans
   
   
 </code-group>
-
 #### Result format
 
 ```json

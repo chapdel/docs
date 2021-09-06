@@ -1,7 +1,7 @@
 ---
 title: Libraries
 description: "Notch Pay usage for Checkout."
-position: 7
+position: 6
 category: Libraires & Plugins
 endpoints:
   - Officially supported

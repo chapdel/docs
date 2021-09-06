@@ -1,7 +1,7 @@
 ---
 title: Resources
 description: "Available resources on Notch Pay."
-position: 6
+position: 5
 category: Resources
 ---
 

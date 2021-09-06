@@ -1,8 +1,8 @@
 ---
 title: Subscriptions
 description: "Subscriptions allow customers to pay for recurring interval."
-position: 5
-category: Guide
+position: 4
+category: Features
 endpoints:
   - Create Plan
   - Initialize subscription

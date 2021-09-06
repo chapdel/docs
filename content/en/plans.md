@@ -1,8 +1,8 @@
 ---
 title: Plans
 description: "The Plans API allows you to create payment options to initiate subscription"
-position: 4
-category: Guide
+position: 3
+category: Features
 endpoints:
   - Create Plan
   - List Plans

@@ -4,7 +4,6 @@ description: "Welcome to the Notch Pay Developer's Guide. The guide to build fin
 position: 1
 category: ""
 guides:
-  - Exchange Rates
   - Checkout
   - Plans
   - Subscriptions
@@ -15,9 +14,9 @@ resources:
 
 Welcome to the Notch Pay Developer Guide. The guide to build finance experiences with the Notch Pay API.
 
-## Guides
+## Features
 
-Available guides
+Available features
 
 <list :items="guides"></list>
 

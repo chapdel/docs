@@ -1,8 +1,8 @@
 ---
 title: Checkout
 description: "Notch Pay usage for Checkout."
-position: 3
-category: Guide
+position: 2
+category: Features
 endpoints:
   - Initialize
   - Fetch

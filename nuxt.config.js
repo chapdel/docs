@@ -1,4 +1,4 @@
-import theme from "@nuxt/content-theme-docs";
+import theme from "@notchafrica/content-theme-extended-docs";
 
 export default theme({
   docs: {

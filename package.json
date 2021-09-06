@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@notchafrica/content-theme-extended-docs": "^0.0.2",
+    "@notchafrica/nuxt-extended-docs": "^2.0.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "nuxt": "^2.14.7"
   }

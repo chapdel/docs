@@ -59,56 +59,56 @@ Creating a plan with our API
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Paramètre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire ?</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
+<td>nom</td>
 <td>String</td>
-<td>Yes</td>
-<td>Name of your Plan</td>
+<td>Oui</td>
+<td>Nom de votre régime</td>
 </tr>
 <tr>
-<td>interval</td>
+<td>intervalle</td>
 <td>String</td>
-<td>Yes</td>
-<td>Interval of subscription. Available values: <br>
-    `daily`, `weekly`, `monthly`, `quarterly`, `annually`
+<td>Oui</td>
+<td>Intervalle d'abonnement. Valeurs disponibles : <br>
+    quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel ".
 </td>
 <tr>
-<td>price</td>
-<td>Float</td>
-<td>Yes</td>
-<td>Price shold be a valid amount for selected currency</td>
+<td>prix</td>
+<td>Flotteur</td>
+<td>Oui</td>
+<td>Le prix doit être un montant valide pour la devise sélectionnée.</td>
 </tr>
 <tr>
-<td>currency</td>
+<td>devise</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (https://docs.notchpay.co/resources#currencies) </td>
 </tr>
 <tr>
-<td>trial_interval</td>
-<td>Integer</td>
-<td>Yes</td>
-<td>Interval of trial. Available values: <br>
-    `daily`, `weekly`, `monthly`, `quarterly`, `annually`
+<td>Intervalle de test</td>
+<td>Entier</td>
+<td>Oui</td>
+<td>Intervalle de l'essai. Valeurs disponibles: <br>
+    quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel ".
 </td>
 </tr>
 <tr>
-<td>trial_period</td>
-<td>Integer</td>
-<td>Yes</td>
-<td>Period of tial.
+<td>période d'essai</td>
+<td>Entier</td>
+<td>Oui</td>
+<td>Période de tial.
 </td>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -130,7 +130,7 @@ curl https://api.notchpay.co/plans
   
   
 </code-group>
-#### Result format
+#### Resultat
 
 ```json
 {
@@ -158,30 +158,30 @@ curl https://api.notchpay.co/plans
 
 ## List Plans
 
-List plans available on your business account.
+Liste des plans disponibles sur votre compte professionnel.
 
 #### Headers
 
 <table>
 <thead>
 <tr>
-<th>Param</th>
-<th>Type</th>
-<th>Required?</th>
+<th>Parametres</th>
+<th>Types</th>
+<th>Nécessaire ?</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>N-Authorization</td>
+<td>N-Autorisation</td>
 <td>String</td>
-<td>Yes</td>
-<td>Your Business Key or Sandbox Key</td>
+<td>Oui</td>
+<td>Votre clé professionnelle ou votre clé Sandbo</td>
 </tr>
 <tr>
-<td>Accept</td>
+<td>Accepter</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>application/json</td>
 </tr>
 </tbody>
@@ -282,21 +282,21 @@ Fetch plan on your business account.
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire ?</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>N-Authorization</td>
+<td>N-Autorisation</td>
 <td>String</td>
 <td>Yes</td>
 <td>Your Business Key or Sandbox Key</td>
 </tr>
 <tr>
-<td>Accept</td>
+<td>Accepter</td>
 <td>String</td>
 <td>Yes</td>
 <td>application/json</td>
@@ -309,9 +309,9 @@ Fetch plan on your business account.
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -319,7 +319,7 @@ Fetch plan on your business account.
 <tr>
 <td>plan_id</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>ID of your plan</td>
 </tr>
 </tbody>
@@ -376,23 +376,23 @@ Updating a plan with our API
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>N-Authorization</td>
+<td>N-Autorisation</td>
 <td>String</td>
-<td>Yes</td>
-<td>Your Business Key or Sandbox Key</td>
+<td>Oui</td>
+<td>Votre clé professionnelle ou votre clé Sandbox</td>
 </tr>
 <tr>
-<td>Accept</td>
+<td>Accepter</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>application/json</td>
 </tr>
 </tbody>
@@ -405,7 +405,7 @@ Updating a plan with our API
 <tr>
 <th>Param</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Oui</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -413,7 +413,7 @@ Updating a plan with our API
 <tr>
 <td>plan_id</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>ID of your plan</td>
 </tr>
 </tbody>
@@ -426,49 +426,49 @@ Updating a plan with our API
 <tr>
 <th>Param</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire?</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
+<td>nom</td>
 <td>String</td>
-<td>No</td>
-<td>Name of your Plan</td>
+<td>Non</td>
+<td>Nom de votre régime</td>
 </tr>
 <tr>
-<td>interval</td>
+<td>intervalle</td>
 <td>String</td>
-<td>Yes</td>
-<td>Interval of subscription. Available values: <br>
-    `daily`, `weekly`, `monthly`, `quarterly`, `annually`
+<td>Oui</td>
+<td>Intervalle d'abonnement. Valeurs disponibles: <br>
+    quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel ".
 </td>
 <tr>
-<td>price</td>
-<td>Float</td>
-<td>No</td>
-<td>Price shold be a valid amount for selected currency</td>
+<td>prix</td>
+<td>Flotteur</td>
+<td>Non</td>
+<td>Le prix doit être un montant valide pour la devise sélectionnée.</td>
 </tr>
 <tr>
-<td>currency</td>
+<td>devise</td>
 <td>String</td>
-<td>Yes if price</td>
+<td>Oui if price</td>
 <td>`xaf`, `usd`, `ngn`. Get all available [Currencies](https://docs.notchpay.co/ressources#currencies) </td>
 </tr>
 <tr>
-<td>trial_interval</td>
-<td>Integer</td>
+<td>intervalle d'essai</td>
+<td>Entier</td>
 <td>Yes</td>
-<td>Interval of trial. Available values: <br>
-    `daily`, `weekly`, `monthly`, `quarterly`, `annually`
+<td>Intervalle de l'essai. Valeurs disponibles : <br>
+   quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel "
 </td>
 </tr>
 <tr>
-<td>trial_period</td>
-<td>Integer</td>
-<td>Yes</td>
-<td>Period of tial.
+<td>période d'essai</td>
+<td>Entier</td>
+<td>Oui</td>
+<td>Période de tial.
 </td>
 </tbody>
 </table>
@@ -530,21 +530,21 @@ Deleting plan on your business account.
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>N-Authorization</td>
+<td>N-Autorisation</td>
 <td>String</td>
-<td>Yes</td>
-<td>Your Business Key or Sandbox Key</td>
+<td>Oui</td>
+<td>Votre clé professionnelle ou votre clé Sandbox</td>
 </tr>
 <tr>
-<td>Accept</td>
+<td>Accepter</td>
 <td>String</td>
 <td>Yes</td>
 <td>application/json</td>
@@ -557,9 +557,9 @@ Deleting plan on your business account.
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire ?</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -567,7 +567,7 @@ Deleting plan on your business account.
 <tr>
 <td>plan_id</td>
 <td>String</td>
-<td>Yes</td>
+<td>Oui</td>
 <td>ID of your plan</td>
 </tr>
 </tbody>
@@ -594,6 +594,6 @@ curl https://api.notchpay.co/plans/[plan_id]
 ```json
 {
   "status": 201,
-  "message": "Resource deleted"
+  "message": "Ressource supprimée"
 }
 ```

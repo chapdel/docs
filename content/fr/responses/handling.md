@@ -1,11 +1,11 @@
 ---
-title: Response handling
-description: "Notch Pay usage for Checkout."
+title: Traitement des réponses
+description: "Utilisation de Notch Pay pour le paiement."
 position: 7
 category: Responses
 ---
 
-<p>After submitting an API call, you receive a response back to inform you that your request was received and processed. Depending on the HTTP status code of the response, you should build some logic to handle any errors that a request or the system may return.</p>
+<p> Après avoir soumis un appel d'API, vous recevez une réponse en retour pour vous informer que votre demande a été reçue et traitée. En fonction du code d'état HTTP de la réponse, vous devez élaborer une logique pour gérer les erreurs que la demande ou le système peut renvoyer..</p>
 
 ## Success responses
 
@@ -24,12 +24,12 @@ category: Responses
                 <a href="https://httpstatuses.com/200" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">200</a>
             </td>
             <td>OK</td>
-            <td>Request processed normally</td>
+            <td>Demande traitée normalement</td>
             <td>
                 <p>
-                    The request message has been successfully processed, and it has produced a response.
+                    Le message de demande a été traité avec succès et a produit une réponse.
                     <br />
-                    The response message varies, depending on the request method and the requested data.
+                    Le message de réponse varie en fonction de la méthode de demande et des données demandées.
                 </p>
             </td>
         </tr>
@@ -37,11 +37,11 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/201" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">201</a>
             </td>
-            <td>Created</td>
-            <td>Request has created resource</td>
+            <td> Créer</td>
+            <td>La demande a créé une ressource</td>
             <td>
                 <p>
-                    The request message  has succeeded and has led to the creation of a resource.
+                    Le message de demande a réussi et a conduit à la création d'une ressource.
                 </p>
             </td>
         </tr>
@@ -49,12 +49,12 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/202" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">202</a>
             </td>
-            <td>Accepted</td>
-            <td>Request has been accepted</td>
+            <td>Accepter</td>
+            <td>La demande a été acceptée</td>
             <td>
-                The request has been accepted for processing, but the processing has not been completed;
+                La demande a été acceptée pour traitement, mais le traitement n'est pas terminé ;
                 <br>
-                In case on transaction, indicate that we are currently waiting confirmation of user or bank provider. 
+               En cas de transaction, indiquez que nous attendons actuellement la confirmation de l'utilisateur ou du prestataire bancaire. 
             </td>
         </tr>
     </tbody>
@@ -76,34 +76,34 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/401" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">401</a>
             </td>
-            <td>Unauthorized</td>
-            <td>Authentication required</td>
+            <td>Non autorisé</td>
+            <td>Authentification requise</td>
             <td>
-                <p>You need to input valid ``business_key`` to access the resource.</p>
+                <p>Vous devez saisir une "business_key" valide pour accéder à la ressource..</p>
             </td>
         </tr>
         <tr>
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/403" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">403</a>
             </td>
-            <td>Forbidden</td>
-            <td>Insufficient permission to process request</td>
+            <td>Interdit</td>
+            <td>Autorisation insuffisante pour traiter la demande</td>
             <td>
-                You do not have the appropriate user rights to access the request.
+                Vous ne disposez pas des droits d'utilisateur appropriés pour accéder à la demande.
                 <br />
-                Do not repeat the request.
+               Ne répétez pas la demande.
             </td>
         </tr>
         <tr>
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/404" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">404</a>
             </td>
-            <td>Not Found</td>
-            <td>Resource Not Found</td>
+            <td> Non trouvé</td>
+            <td>Ressource non trouvée</td>
             <td>
-                It was not possible to retrieve the resource you requested at the specified location.
+               Il n'a pas été possible de récupérer la ressource que vous avez demandée à l'emplacement spécifié.
                 <br />
-                Usually, this happens when the URL or Reference you pass with the request is incorrect.
+                En général, cela se produit lorsque l'URL ou la référence que vous transmettez avec la demande est incorrecte.
             </td>
         </tr>
         <tr>
@@ -113,19 +113,19 @@ category: Responses
             <td>
                 <a href="https://tools.ietf.org/html/rfc4918#section-11.2" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Unprocessable Entity</a>
             </td>
-            <td>Request validation error</td>
-            <td>The request is formally valid, but semantically incorrect: the receiving server can read it, but it cannot understand it.</td>
+            <td>Erreur de validation de la demande</td>
+            <td>La demande est formellement valide, mais sémantiquement incorrecte : le serveur récepteur peut la lire, mais il ne peut pas la comprendre.</td>
         </tr>
         <tr>
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/500" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">500</a>
             </td>
-            <td>Internal Server Error</td>
-            <td>Server could not process request</td>
+            <td>Erreur de serveur interne</td>
+            <td>Le serveur n'a pas pu traiter la demande</td>
             <td>
-                The receiving server encountered an unexpected condition that prevents it from fulfilling the request.
+               Le serveur récepteur a rencontré une condition inattendue qui l'empêche de répondre à la demande.
                 <br />
-                Our servers may return a 500 status code also when the request is incorrect, for example because of a missing or not filled in mandatory field.
+                Nos serveurs peuvent également renvoyer un code d'état 500 lorsque la demande est incorrecte, par exemple en raison d'un champ obligatoire manquant ou non rempli.
             </td> 
         </tr> 
     </tbody>

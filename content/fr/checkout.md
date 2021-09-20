@@ -1,37 +1,37 @@
 ---
-title: Checkout
-description: "Notch Pay usage for Checkout."
+title: Paiement
+description: "Utilisation de Notch Pay pour le paiement."
 position: 2
-category: Features
+category: Fonctionnalités
 endpoints:
-  - Initialize
-  - Fetch
-  - Complete
-  - Cancel
+  - Initialiser
+  - Récuperer
+  - Completer
+  - Annuler
 ---
 
-Notch Pay usage for Checkout.
+Utilisation de Notch Pay pour le paiement.
 
-# Endpoints
+# Points d'access
 
 <list :items="endpoints"></list>
 
-<alert type="warning">
+<alert type="avertissement">
 
-To get access of those endpoint, you need [Business ID](https://business.notchpay.co/settings/apis-webhooks)
+Pour obtenir l'accès à ces points d'extrémité, il faut [Business ID](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
-## Initialize
+## Initialiser
 
-Initialize checkout transaction on Notch Pay.
+Initialiser la transaction de paiement sur Notch Pay.
 
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Nécessaire ?</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -39,37 +39,37 @@ Initialize checkout transaction on Notch Pay.
 <tr>
 <td>email</td>
 <td>String</td>
-<td>Yes if phone is null</td>
-<td>Email address of customer</td>
+<td>Oui si le téléphone est nul</td>
+<td>Adresse électronique du client</td>
 </tr>
 <tr>
 <td>phone</td>
 <td>String</td>
-<td>Yes if email is null</td>
-<td>Phone Number of customer</td>
+<td>Oui si l'email est nul</td>
+<td>Numéro de téléphone du client</td>
 </tr>
 <tr>
 <tr>
 <td>amount</td>
-<td>Numeric</td>
-<td>Yes</td>
-<td>Amount you are debiting customer.</td>
+<td>Numérique</td>
+<td>Oui</td>
+<td>Montant que vous débitez au client.</td>
 </tr>
 <td>reference</td>
 <td>String</td>
-<td>No</td>
-<td>Transaction reference. If you do not pass this parameter, Notch Pay will generate a unique reference for you.</td>
+<td>Non</td>
+<td>Référence de la transaction. Si vous ne passez pas ce paramètre, Notch Pay va générer une référence unique pour vous..</td>
 </tr>
 <tr>
 <td>currency</td>
 <td>string</td>
-<td>Yes</td>
-<td>Currency charge should be performed in</td>
+<td>Oui</td>
+<td>La monnaie en laquelle la transaction doit être effectué</td>
 </tr>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -86,7 +86,7 @@ curl https://api.notchpay.co/checkout/initialize
   
 </code-group>
 
-#### Result format
+#### Resultat
 
 ```json
 {
@@ -123,7 +123,7 @@ curl https://api.notchpay.co/checkout/initialize
 }
 ```
 
-## Fetch
+## Récuperer
 
 Get Transaction details
 
@@ -132,7 +132,7 @@ Get Transaction details
 <tr>
 <th>Param</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Obligatoire?</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -201,22 +201,22 @@ curl https://api.notchpay.co/checkout/[REFERENCE]
 
 ## Complete
 
-After initializing your transaction, you have two options to complete your transaction. Continue in web checkout or in RESP API.
+Après avoir initialisé votre transaction, vous avez deux options pour terminer votre transaction. Continuer dans la caisse en ligne ou dans RESP API.
 
 ### Web Checkout
 
-Complete your transaction by open or redirect your customer to `authorization_url` present in your response.
+Terminez votre transaction en ouvrant ou en redirigeant votre client vers `authorization_url` présents dans votre réponse.
 
 ### REST API
 
-You can also terminate the transaction with the REST API method.
+Vous pouvez également mettre fin à la transaction avec la méthode REST API.
 
 <table>
 <thead>
 <tr>
 <th>Param</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Nécessaire ?</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -225,19 +225,19 @@ You can also terminate the transaction with the REST API method.
 <td>gateway</td>
 <td>String</td>
 <td>Yes</td>
-<td>Payment gateway to make a payment with. Available gateways include; `mobile (for mobile money processing), card, notchpay, paypal`  </td>
+<td>Passerelle de paiement pour effectuer un paiement. Les passerelles disponibles sont : `mobile (pour le traitement de l'argent mobile), carte, notchpay, paypal.`  </td>
 </tr>
 <tr>
 <td>reference</td>
 <td>String</td>
-<td>Yes (passed by request path param)</td>
+<td>Yes (passé par le chemin de la requête param)</td>
 <td>Reference of transaction you want to complete  </td>
 </tr>
 <tr>
 <td>data</td>
 <td>Object</td>
 <td>Yes</td>
-<td>Customer information relating to the chosen payment method.</td>
+<td>Informations sur le client relatives au mode de paiement choisi.</td>
 </tr>
 <tr>
 </tbody>
@@ -246,14 +246,14 @@ You can also terminate the transaction with the REST API method.
 #### Data parameters according to gateway
 
 - `notchpay`
-  - `number` : Customer Account ID
-  - `secret` : Customer Account Secret Code (SCD)
+  - `number` : ID du compte client
+  - `secret` : Code secret du compte client (SCD)
 - `mobile`
-  - `phone` : Customer phone number
+  - `phone` : Numéro de téléphone du client
 - `card`
-  - `name` : Customer card name
-  - `number` : Customer card number
-  - `cvv` : Customer card cvv
+  - `name` : Nom de la carte client
+  - `number` : Numéro de la carte client
+  - `cvv` :Carte client cvv
 
 #### Example
 
@@ -272,18 +272,18 @@ curl https://api.notchpay.co/checkout/TRANSACTION_REFERENCE
   
 </code-group>
 
-#### Result format
+#### Résultat
 
 ```json
 {
-  "message": "Your transaction has been done",
+  "message": "Votre transaction a été effectuée",
   "status": 200
 }
 ```
 
 ## Cancel
 
-Cancel your transaction
+Annuler votre transaction
 
 #### Example
 
@@ -301,10 +301,10 @@ curl https://api.notchpay.co/checkout/TRANSACTION_REFERENCE
   
 </code-group>
 
-#### Result format
+#### Format du résultat
 
 ```json
 {
-  "message": "Your transaction has been canceled"
+  "message": "Votre transaction a été annulée"
 }
 ```

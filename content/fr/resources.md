@@ -1,15 +1,15 @@
 ---
-title: Resources
-description: "Available resources on Notch Pay."
+title: Ressources
+description: "Ressource disponible sur Notch Pay."
 position: 5
 category: Resources
 ---
 
-Available resources on Notch Pay.
+Ressources disponibles sur le paiement sur Notch Pay.
 
-## Gateways
+## Passerelles
 
-Accepted gateways
+Passerelles acceptées
 
 <table>
 <thead>
@@ -44,9 +44,9 @@ Accepted gateways
 </tr>
 </table>
 
-## Currencies
+## devise
 
-Available currencies
+Devises disponibles
 
 <table>
 <thead>
@@ -826,14 +826,14 @@ Available currencies
 </tr>
 </table>
 
-## Countries
+## Pays
 
-Available Countries
+Pays disponible
 
 <table>
 <thead>
  <tr>
-<td>Name</td>
+<td>Nom</td>
 <td>iso_code</td>
 </tr>
 </thead>
@@ -2110,9 +2110,9 @@ Available Countries
 
 </table>
 
-## Languages
+## Langues
 
-Available languages
+Langues disponibles
 
 <table>
 <thead>

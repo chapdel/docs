@@ -1,17 +1,17 @@
 ---
 title: Plans
-description: "The Plans API allows you to create payment options to initiate subscription"
+description: "L'API Plans vous permet de créer des options de paiement pour lancer un abonnement."
 position: 3
 category: Features
 endpoints:
   - Create Plan
   - List Plans
-  - Fetch Plan
+  - Recuperer un plan
   - Update a Plan
   - Destroy Plan
 ---
 
-The Plans API allows you to create payment options to initiate [Subscriptions](https://docs.notchpay.co/subscriptions)
+L'API Plans vous permet de créer des options de paiement afin d'initier [Subscriptions](https://docs.notchpay.co/subscriptions)
 
 # Endpoints
 
@@ -19,7 +19,7 @@ The Plans API allows you to create payment options to initiate [Subscriptions](h
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
+Pour obtenir l'accès à ces points d'extrémité, il faut une [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
@@ -27,39 +27,12 @@ To get access of those endpoint, you need [Business API Key](https://business.no
 
 Creating a plan with our API
 
-#### Headers
+#### Entetes
 
 <table>
 <thead>
 <tr>
-<th>Param</th>
-<th>Type</th>
-<th>Required?</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>N-Authorization</td>
-<td>String</td>
-<td>Yes</td>
-<td>Your Business Key or Sandbox Key</td>
-</tr>
-<tr>
-<td>Accept</td>
-<td>String</td>
-<td>Yes</td>
-<td>application/json</td>
-</tr>
-</tbody>
-</table>
-
-#### Body
-
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
+<th>Parametre</th>
 <th>Type</th>
 <th>Obligatoire ?</th>
 <th>Description</th>
@@ -67,32 +40,59 @@ Creating a plan with our API
 </thead>
 <tbody>
 <tr>
-<td>nom</td>
-<td>String</td>
+<td>N-Authorization</td>
+<td>chaines de caractères</td>
 <td>Oui</td>
-<td>Nom de votre régime</td>
+<td>Votre clé business ou votre clé Sandboxy</td>
 </tr>
 <tr>
-<td>intervalle</td>
-<td>String</td>
+<td>Accept</td>
+<td>chaines de caractères</td>
+<td>Yes</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+
+#### Corps
+
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Type</th>
+<th>Obligatoire ?</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>chaines de caractères</td>
+<td>Oui</td>
+<td>Nom du plan</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>chaîne de caractères</td>
 <td>Oui</td>
 <td>Intervalle d'abonnement. Valeurs disponibles : <br>
     quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel ".
 </td>
 <tr>
-<td>prix</td>
-<td>Flotteur</td>
+<td>price</td>
+<td>numerique</td>
 <td>Oui</td>
 <td>Le prix doit être un montant valide pour la devise sélectionnée.</td>
 </tr>
 <tr>
-<td>devise</td>
-<td>String</td>
+<td>currency</td>
+<td>chaines de caractères</td>
 <td>Oui</td>
 <td>`xaf`, `usd`, `ngn`. Get all available [Currencies] (https://docs.notchpay.co/resources#currencies) </td>
 </tr>
 <tr>
-<td>Intervalle de test</td>
+<td>trial_interval</td>
 <td>Entier</td>
 <td>Oui</td>
 <td>Intervalle de l'essai. Valeurs disponibles: <br>
@@ -100,7 +100,7 @@ Creating a plan with our API
 </td>
 </tr>
 <tr>
-<td>période d'essai</td>
+<td>trial period</td>
 <td>Entier</td>
 <td>Oui</td>
 <td>Période de tial.
@@ -156,16 +156,16 @@ curl https://api.notchpay.co/plans
 }
 ```
 
-## List Plans
+## List of plans
 
 Liste des plans disponibles sur votre compte professionnel.
 
-#### Headers
+#### Entetes
 
 <table>
 <thead>
 <tr>
-<th>Parametres</th>
+<th>Parametre</th>
 <th>Types</th>
 <th>Nécessaire ?</th>
 <th>Description</th>
@@ -174,20 +174,20 @@ Liste des plans disponibles sur votre compte professionnel.
 <tbody>
 <tr>
 <td>N-Autorisation</td>
-<td>String</td>
+<td>chaines de caractères</td>
 <td>Oui</td>
 <td>Votre clé professionnelle ou votre clé Sandbo</td>
 </tr>
 <tr>
-<td>Accepter</td>
-<td>String</td>
+<td>Accept</td>
+<td>chaines de caractères</td>
 <td>Oui</td>
 <td>application/json</td>
 </tr>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -273,11 +273,11 @@ curl https://api.notchpay.co/plans
 ]
 ```
 
-## Fetch Plan
+## Recuperer un plan
 
-Fetch plan on your business account.
+Recuperer un plan de votre compte Business.
 
-#### Headers
+#### Entetes
 
 <table>
 <thead>
@@ -291,14 +291,14 @@ Fetch plan on your business account.
 <tbody>
 <tr>
 <td>N-Autorisation</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Yes</td>
 <td>Your Business Key or Sandbox Key</td>
 </tr>
 <tr>
-<td>Accepter</td>
-<td>String</td>
-<td>Yes</td>
+<td>accept</td>
+<td>Chaîne de caractères</td>
+<td>Oui</td>
 <td>application/json</td>
 </tr>
 </tbody>
@@ -318,14 +318,14 @@ Fetch plan on your business account.
 <tbody>
 <tr>
 <td>plan_id</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
-<td>ID of your plan</td>
+<td>ID du plan</td>
 </tr>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -341,7 +341,7 @@ curl https://api.notchpay.co/plans/[plan_id]
   
 </code-group>
 
-#### Result
+#### Resultat
 
 ```json
 {
@@ -367,11 +367,11 @@ curl https://api.notchpay.co/plans/[plan_id]
 }
 ```
 
-## Update Plan
+## Mettre à jour un plan
 
-Updating a plan with our API
+Mettre à jour un plan avec Notch Pay
 
-#### Headers
+#### Entetes
 
 <table>
 <thead>
@@ -385,13 +385,13 @@ Updating a plan with our API
 <tbody>
 <tr>
 <td>N-Autorisation</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
 <td>Votre clé professionnelle ou votre clé Sandbox</td>
 </tr>
 <tr>
-<td>Accepter</td>
-<td>String</td>
+<td>Accept</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
 <td>application/json</td>
 </tr>
@@ -403,7 +403,7 @@ Updating a plan with our API
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
 <th>Oui</th>
 <th>Description</th>
@@ -412,9 +412,9 @@ Updating a plan with our API
 <tbody>
 <tr>
 <td>plan_id</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
-<td>ID of your plan</td>
+<td>ID de votre plan</td>
 </tr>
 </tbody>
 </table>
@@ -424,7 +424,7 @@ Updating a plan with our API
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
 <th>Obligatoire?</th>
 <th>Description</th>
@@ -432,32 +432,32 @@ Updating a plan with our API
 </thead>
 <tbody>
 <tr>
-<td>nom</td>
-<td>String</td>
+<td>name</td>
+<td>Chaîne de caractères</td>
 <td>Non</td>
 <td>Nom de votre régime</td>
 </tr>
 <tr>
-<td>intervalle</td>
-<td>String</td>
+<td>interval</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
 <td>Intervalle d'abonnement. Valeurs disponibles: <br>
     quotidien ", " hebdomadaire ", " mensuel ", " trimestriel ", " annuel ".
 </td>
 <tr>
-<td>prix</td>
-<td>Flotteur</td>
+<td>price</td>
+<td>numerique</td>
 <td>Non</td>
 <td>Le prix doit être un montant valide pour la devise sélectionnée.</td>
 </tr>
 <tr>
-<td>devise</td>
-<td>String</td>
+<td>currency</td>
+<td>Chaîne de caractères</td>
 <td>Oui if price</td>
 <td>`xaf`, `usd`, `ngn`. Get all available [Currencies](https://docs.notchpay.co/ressources#currencies) </td>
 </tr>
 <tr>
-<td>intervalle d'essai</td>
+<td>trial_interval</td>
 <td>Entier</td>
 <td>Yes</td>
 <td>Intervalle de l'essai. Valeurs disponibles : <br>
@@ -465,15 +465,15 @@ Updating a plan with our API
 </td>
 </tr>
 <tr>
-<td>période d'essai</td>
+<td>trial_period</td>
 <td>Entier</td>
 <td>Oui</td>
-<td>Période de tial.
+<td>Période d'essai.
 </td>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -495,7 +495,7 @@ curl https://api.notchpay.co/plans/[plan_id]
   
 </code-group>
 
-#### Result format
+#### Resultat
 
 ```json
 {
@@ -521,11 +521,11 @@ curl https://api.notchpay.co/plans/[plan_id]
 }
 ```
 
-## Destroy Plan
+## Supprimer un plan
 
-Deleting plan on your business account.
+Suppression du plan sur votre compte professionnel.
 
-#### Headers
+#### Entetes
 
 <table>
 <thead>
@@ -539,20 +539,20 @@ Deleting plan on your business account.
 <tbody>
 <tr>
 <td>N-Autorisation</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
 <td>Votre clé professionnelle ou votre clé Sandbox</td>
 </tr>
 <tr>
-<td>Accepter</td>
-<td>String</td>
-<td>Yes</td>
+<td>Accept</td>
+<td>Chaîne de caractères</td>
+<td>Oui</td>
 <td>application/json</td>
 </tr>
 </tbody>
 </table>
 
-#### Params
+#### Parametres
 
 <table>
 <thead>
@@ -566,14 +566,14 @@ Deleting plan on your business account.
 <tbody>
 <tr>
 <td>plan_id</td>
-<td>String</td>
+<td>Chaîne de caractères</td>
 <td>Oui</td>
-<td>ID of your plan</td>
+<td>ID de votre plan</td>
 </tr>
 </tbody>
 </table>
 
-#### Example
+#### Exemple
 
 <code-group>
   <code-block label="cURL" active>
@@ -589,11 +589,11 @@ curl https://api.notchpay.co/plans/[plan_id]
   
 </code-group>
 
-#### Result
+#### Resultat
 
 ```json
 {
   "status": 201,
-  "message": "Ressource supprimée"
+  "message": "Resource deleted"
 }
 ```

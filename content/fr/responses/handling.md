@@ -37,7 +37,7 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/201" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">201</a>
             </td>
-            <td> Créer</td>
+            <td> Created</td>
             <td>La demande a créé une ressource</td>
             <td>
                 <p>
@@ -49,7 +49,7 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/202" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">202</a>
             </td>
-            <td>Accepter</td>
+            <td>Accepted</td>
             <td>La demande a été acceptée</td>
             <td>
                 La demande a été acceptée pour traitement, mais le traitement n'est pas terminé ;
@@ -76,7 +76,7 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/401" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">401</a>
             </td>
-            <td>Non autorisé</td>
+            <td>Unauthorized</td>
             <td>Authentification requise</td>
             <td>
                 <p>Vous devez saisir une "business_key" valide pour accéder à la ressource..</p>
@@ -86,7 +86,7 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/403" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">403</a>
             </td>
-            <td>Interdit</td>
+            <td>Forbidden</td>
             <td>Autorisation insuffisante pour traiter la demande</td>
             <td>
                 Vous ne disposez pas des droits d'utilisateur appropriés pour accéder à la demande.
@@ -98,7 +98,7 @@ category: Responses
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/404" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">404</a>
             </td>
-            <td> Non trouvé</td>
+            <td> Not Found</td>
             <td>Ressource non trouvée</td>
             <td>
                Il n'a pas été possible de récupérer la ressource que vous avez demandée à l'emplacement spécifié.
@@ -111,16 +111,16 @@ category: Responses
                 <a href="https://httpstatuses.com/422" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">422</a>
             </td>
             <td>
-                <a href="https://tools.ietf.org/html/rfc4918#section-11.2" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Unprocessable Entity</a>
+                <a href="https://tools.ietf.org/html/rfc4918#section-11.2" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Entité non traitable</a>
             </td>
-            <td>Erreur de validation de la demande</td>
+            <td>Request validation error</td>
             <td>La demande est formellement valide, mais sémantiquement incorrecte : le serveur récepteur peut la lire, mais il ne peut pas la comprendre.</td>
         </tr>
         <tr>
             <td style="text-align: center;">
                 <a href="https://httpstatuses.com/500" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">500</a>
             </td>
-            <td>Erreur de serveur interne</td>
+            <td>Internal Server Error</td>
             <td>Le serveur n'a pas pu traiter la demande</td>
             <td>
                Le serveur récepteur a rencontré une condition inattendue qui l'empêche de répondre à la demande.

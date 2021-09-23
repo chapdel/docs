@@ -9,7 +9,7 @@ endpoints:
   - Check
 ---
 
-Subscriptions allow customers to pay for recurring interval. Init it and we will handle the renewals when they are due.
+Les abonnements permettent aux clients de payer pour des intervalles récurrents. Mettez-le en place et nous nous occuperons des renouvellements lorsqu'ils seront dus.
 
 # Endpoints
 
@@ -17,14 +17,14 @@ Subscriptions allow customers to pay for recurring interval. Init it and we will
 
 <alert type="warning">
 
-To get access of those endpoint, you need [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
+Pour obtenir l'accès à ces points d'extrémité, il faut une [Business API Key](https://business.notchpay.co/settings/apis-webhooks)
 
 </alert>
 
-## Create Plan
+## Créer un plan
 
-The feature help you to decide the amount and interval in which the subscription will be paid. To make subscription payments you need a plan.
-You can graphically create plan vie the Business Dashboard. Visit [Plan](https://docs.notchpay.co/plans) for more information's about it.
+Cette fonction vous permet de décider du montant et de l'intervalle auxquels l'abonnement sera payé. Pour effectuer des paiements d'abonnement, vous avez besoin d'un plan.
+Vous pouvez créer un plan graphique à l'aide du tableau de bord de l'entreprise.. Visitez [Plan](https://docs.notchpay.co/plans) pour plus d'informations à ce sujet.
 
 <code-group>
   <code-block label="cURL" active>
@@ -46,7 +46,7 @@ curl https://api.notchpay.co/plans
   
 </code-group>
 
-Result format
+## Format du résultat.
 
 ```json
 {
@@ -71,49 +71,49 @@ Result format
 }
 ```
 
-## Initialize Subscription
+## Initialiser l'abonnement
 
-Initialize recurring payment
+Initialiser le paiement récurrent
 
 <table>
 <thead>
 <tr>
-<th>Param</th>
+<th>Parametre</th>
 <th>Type</th>
-<th>Required?</th>
+<th>Requis</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>plan_id</td>
-<td>String</td>
-<td>Yes</td>
-<td>ID of plan to use for subscription</td>
+<td>Chaîne de caractères</td>
+<td>Oui</td>
+<td>ID du plan à utiliser pour l'abonnement</td>
 </tr>
 <tr>
 <td>quantity</td>
-<td>Integer</td>
-<td>No</td>
-<td>Period of subscription. Default is `1`</td>
+<td>Entier</td>
+<td>Non</td>
+<td>Période de l'abonnement. La valeur par défaut est `1`.</td>
 </tr>
 <tr>
 <td>email</td>
-<td>String</td>
-<td>Yes if phone is null</td>
-<td>Email address of customer</td>
+<td>Chaîne de caractères</td>
+<td>Oui si le téléphone est nul</td>
+<td>Adresse électronique du client</td>
 </tr>
 <tr>
 <td>phone</td>
-<td>String</td>
-<td>Yes if email is null</td>
-<td>Phone Number of customer</td>
+<td>Chaîne de caractères</td>
+<td>Oui si l'email est nul</td>
+<td>Numéro de téléphone du client</td>
 </tr>
 <tr>
 <td>reference</td>
-<td>String</td>
-<td>No</td>
-<td>Subscription reference. If you do not pass this parameter, Notch Pay will generate a unique reference for you.</td>
+<td>Chaîne de caractères</td>
+<td>Non</td>
+<td>Référence de l'abonnement. Si vous ne passez pas ce paramètre, Notch Pay va générer une référence unique pour vous.</td>
 </tr>
 </tbody>
 </table>
@@ -138,7 +138,7 @@ curl https://api.notchpay.co/subscriptions/initialize
   </code-block>
 </code-group>
 
-#### Result format
+#### Format du résultat
 
 ```json
 {
@@ -181,12 +181,11 @@ curl https://api.notchpay.co/subscriptions/initialize
 }
 ```
 
-## Check
+## Vérifiez
 
-Notch Pay allow you to check status of subscription.
+Notch Pay vous permet de vérifier l'état de votre abonnement.
 
-#### Example
-
+#### Exemple
 <code-group>
   <code-block label="cURL" active>
 
@@ -200,7 +199,7 @@ curl https://api.notchpay.co/subscriptions/SUBSCRIPTION_TOKEN/check
   </code-block>
 </code-group>
 
-#### Result format
+#### Format du résultat
 
 ```json
 {

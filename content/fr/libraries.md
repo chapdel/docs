@@ -1,22 +1,22 @@
 ---
-title: Libraries
-description: "Notch Pay usage for Checkout."
+title:  Bibliothéques
+description: "Utilisation de Notch Pay pour le paiement."
 position: 6
-category: Libraires & Plugins
+category: Librairies & Plugins
 endpoints:
-  - Officially supported
-  - Community maintained
+  - Officiellement soutenu
+  - Communauté maintenue
 ---
 
-Notch Pay Available libraries.
+Bibliothèques disponibles.
 
-# Availables
+# Disponibles
 
 <list :items="endpoints"></list>
 
-## Officially supported
+## Officiellement soutenu
 
-These libraries are managed our team
+Ces bibliothèques sont gérées par notre équipe
 
 ### NodeJS
 
@@ -26,6 +26,6 @@ These libraries are managed our team
 
 [notchpay-php](https://github.com/notchpay/notchpay-php)
 
-## Community maintained
+## Communauté maintenue
 
-Waiting for submission
+En attente de soumission

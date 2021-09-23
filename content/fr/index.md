@@ -4,12 +4,12 @@ description: "Bienvenue au Guide du développeur de Notch Pay. Le guide pour cr�
 position: 1
 category: ""
 guides:
-  - Checkout
+  - Paiement
   - Plans
-  - Subscriptions
+  - Abonnements
 resources:
-  - Currencies
-  - Countries
+  - Devises
+  - Pays
 ---
 
 Bienvenue au Guide du développeur de Notch Pay. Le guide pour créer des expériences financières avec l'API Notch Pay.

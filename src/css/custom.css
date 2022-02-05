@@ -114,3 +114,38 @@ Patch to use transformed font icons in dropdowns and expanded menus
   content: "";
   justify-content: center;
 }
+
+
+.theme-doc-markdown.markdown{
+  padding: 2rem;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  /*background: #2e333a !important;*/
+  color:  white;
+  border-radius: 30rem;
+  background: #1f8366 !important;
+}
+
+.menu__link:hover{
+  border-radius: 30rem;
+}
+
+.menu__list-item-collapsible:hover{
+  border-radius: 30rem;
+}
+
+.menu__list-item-collapsible .clean-btn{
+  border-radius: 0px  30rem 30rem 0px;
+  color:  #1f8366 !important;
+}
+
+.pagination-nav__link:hover{
+  background: #1f8366;
+  color: white;
+  border-color: white;
+}
+
+.pagination-nav__sublabel{
+  color: #2e333a;
+}

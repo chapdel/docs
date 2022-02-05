@@ -1,10 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
+title: Payments
 ---
 
-# Transactions
+# Payments
 
-List transactions carried out on your integration.
+List payments transactions carried out on your integration.
 
 ## Requirements
 
@@ -42,7 +43,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="curl" label="cURL">
 
 ```curl
-curl https://api.notchpay.co/transactions
+curl https://api.notchpay.co/payments
 -H "Authorization: BUSINESS_KEY"
 -H "Content-Type: application/json"
 -X GET
@@ -56,7 +57,7 @@ const https = require("https");
 const options = {
   hostname: "api.notchpay.co",
   port: 443,
-  path: "/transactions",
+  path: "/payments",
   method: "GET",
   headers: {
     Authorization: "BUSINESS_KEY",
@@ -85,7 +86,7 @@ req.end();
 
 ```php
 <?php
-  $url = "https://api.notchpay.co/transactions";
+  $url = "https://api.notchpay.co/payments";
   //open connection
   $curl = curl_init();
 

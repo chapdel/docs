@@ -50,7 +50,7 @@ You can also terminate the transaction with the REST API method.
 #### Data parameters according to gateway
 
 - `notchpay`
-  - `number` : Customer Account ID
+  - `account_id` : Customer Account ID
   - `secret` : Customer Account Secret Code (SCD)
 - `mobile`
   - `phone` : Customer phone number
@@ -73,7 +73,7 @@ curl https://api.notchpay.co/checkout/:reference
 -H "Authorization: BUSINESS_KEY"
 -H "Content-Type: application/json"
 -d '{"data": {"phone":"662611051"}, "channel":"mobile"}'
--X POST
+-X PUT
 ```
 
 </TabItem>
@@ -91,7 +91,7 @@ const options = {
   hostname: "api.notchpay.co",
   port: 443,
   path: "/checkout/:reference",
-  method: "POST",
+  method: "PUT",
   headers: {
     Authorization: "BUSINESS_KEY",
     "Content-Type": "application/json",
@@ -131,7 +131,7 @@ req.end();
 
   //set the url, number of POST vars, POST data
   curl_setopt($ch,CURLOPT_URL, $url);
-  curl_setopt($ch,CURLOPT_POST, true);
+  curl_setopt($ch,CURLOPT_PUT, true);
   curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     "Authorization: BUSINESS_KEY",

@@ -1,60 +1,57 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Notch Pay Developer",
   tagline: "Notch Pay developer guide",
-  url: "https://docs.notchpay.me",
+  url: "https://developer.notchpay.co",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   trailingSlash: false,
   favicon: "img/favicon.ico",
   organizationName: "notchpay", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
+  projectName: "developer",// Usually your repo name.
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          routeBasePath: '/', 
+          sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/",
-        },
+        blog: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
 
-  themeConfig: {
-    navbar: {
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
       title: "Notch Pay Developer",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "Notch Pay Developer",
+        src: "img/notchpay.jpeg",
       },
       items: [
-        {
+        /*{
           type: "doc",
           docId: "intro",
           position: "left",
           label: "Guides",
-        },
-        { to: "/snippets", label: "Snippets", position: "left" },
-        { to: "/plugins", label: "Plugins", position: "left" },
+        },*/
+        /*{ to: "/snippets", label: "Snippets", position: "left" },
+        { to: "/plugins", label: "Plugins", position: "left" },*/
         {
           href: "https://notchpay.co",
           label: "Website",
@@ -67,34 +64,56 @@ const config = {
         },
       ],
     },
-    cards: [
-      {
-        title: "Learn",
-        image: "img/learn.svg",
-        link: "learn/about-iota/an-introduction-to-iota",
-        description:
-          "Learn about IOTA, the Tangle, its features, industry applications, network and more.",
+      footer: {
+        style: 'dark',
+        /*links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],*/
+        copyright: `Copyright © ${new Date().getFullYear()} Notch Pay LLC, Inc. Proudly powered by MFOUM GROUP.`,
       },
-      {
-        title: "Participate",
-        image: "img/participate.svg",
-        link: "participate/support-the-network/about-nodes",
-        description:
-          "Join the network and start using solutions built on top of the Tangle.",
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
       },
-      {
-        title: "Build",
-        image: "img/build.svg",
-        link: "build/welcome",
-        description:
-          "Access documentation and guides to build with IOTA in Rust and other languages.",
-      },
-    ],
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
-  },
+    }),
 };
 
 module.exports = config;

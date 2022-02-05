@@ -1,35 +1,12 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 # Introduction
+**Notch Pay** allow you to send money to your friends and family, pay your bills, accept payments on your applications, websites in seconds.
 
-elcome to the Notch Pay Developer Guide. The guide to build finance experiences with the **Notch Pay API**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
+The guide to build finance experiences with the **Notch Pay API**.
